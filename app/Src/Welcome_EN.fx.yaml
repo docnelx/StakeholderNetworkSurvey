@@ -1,0 +1,511 @@
+Welcome_EN As screen:
+    BackgroundImage: =
+    Fill: =RGBA(237, 237, 237, 1)
+    OnHidden: |-
+        =Patch(colTimeRecorder, Last(colTimeRecorder), {End: Now()});
+    OnVisible: |-
+        =ClearCollect(Master,SNP_Master);
+        Set(_preloader,false);
+        Set(_override,false);
+        Set(_popup,false);
+        Collect(colTimeRecorder,{Page: Self.Name,Start:Now(),End: ""});
+
+    Rectangle5_19 As rectangle:
+        Fill: =RGBA(255, 255, 255, 0.9)
+        Height: =586
+        Width: =1366
+        Y: =107
+        ZIndex: =1
+
+    Rectangle5_46 As rectangle:
+        Fill: =RGBA(237, 237, 237, 1)
+        Height: =120
+        Width: =1366
+        Y: =648
+        ZIndex: =4
+
+    Rectangle5_17 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =450
+        Visible: =TabList1_1.Selected.Value="Representative of Partner Organization"
+        Width: =1295
+        X: =71
+        Y: =229
+        ZIndex: =5
+
+    Rectangle5 As rectangle:
+        Fill: =RGBA(232, 34, 34, 0.1)
+        Height: =79
+        Width: =1183
+        X: =183
+        Y: =138
+        ZIndex: =6
+
+    "galmyOrganization As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        DelayItemLoading: =true
+        Height: =368
+        Items: =SortByColumns(PartnersList,"ShortName",SortOrder.Ascending)
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: |-
+            =Clear(SelectedItems);
+            Clear(SelectedCurrentItems);
+            
+            Set(myOrganization,galmyOrganization.Selected.ShortName);
+            Set(myOrganizationLong,galmyOrganization.Selected.LongName);
+            ClearCollect(QDB,Filter(SNP_QuestionDatabase,Organization=myOrganization));
+            ClearCollect(MapDB,Filter(S1_SNP,Organization=myOrganization));
+        TemplateFill: |
+            =If(ThisItem.IsSelected, RGBA(175,224,40,0.3), RGBA(0,0,0,0.001))
+        TemplateSize: =104
+        Visible: =TabList1_1.Selected.Value="Representative of Stakeholder Organization (including FCM Partners)"
+        Width: =1203
+        WrapCount: =3
+        X: =88
+        Y: =240
+        ZIndex: =7
+
+        Image2_1 As image:
+            Height: =72
+            Image: =ThisItem.ImageUrl
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Width: =72
+            X: =27
+            Y: =16
+            ZIndex: =1
+
+        Title2_1 As label:
+            AutoHeight: =true
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =12
+            Text: =ThisItem.LongName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =243
+            X: =123
+            Y: =8
+            ZIndex: =2
+
+        Subtitle2_1 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =8
+            Text: =ThisItem.ShortName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title2_1.Width
+            X: =123
+            Y: =Title2_1.Y + Title2_1.Height+10
+            ZIndex: =3
+
+        Separator2_1 As rectangle:
+            Fill: =RGBA(237, 237, 237, 1)
+            Height: =5
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =5
+
+        Rectangle2_1 As rectangle:
+            Fill: |
+                =RGBA(23,79,53, 1)
+            Height: =Parent.TemplateHeight - Separator2_1.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =6
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =9
+
+        Label2 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =42
+            Size: =9
+            Text: ="Municipal Asset Management Program"
+            Width: =365
+            X: =12
+            Y: =20
+            ZIndex: =8
+
+        Label2_2 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =36
+            Size: =17
+            Text: =If(lang="En","Stakeholder Network Survey - 2023","Sondage auprès du réseau des intervenants - 2023")
+            Width: =602
+            X: =12
+            Y: =62
+            ZIndex: =9
+
+    Arrow2 As arrow:
+        DisplayMode: =If(IsBlank(myOrganization),DisplayMode.Disabled,DisplayMode.Edit)
+        Fill: =RGBA(184, 0, 0, 1)
+        OnSelect: |
+            =
+            If(
+            TabList1_1.Selected.Value = "Representative of Stakeholder Organization (including FCM Partners)",
+            Set(myOrganization,galmyOrganization.Selected.ShortName);
+            Set(myOrganizationLong,galmyOrganization.Selected.LongName);
+            Set(Stakeholderclass,"Partner");,
+            
+            Set(myOrganization, respondentName.Value);
+            Set(Stakeholderclass,"Professional");
+            );
+            
+            
+            If(CountRows(Filter(Master,Title=myOrganization))>0,
+            Set(_popup,true);,
+            Navigate(Understanding,ScreenTransition.Fade););
+            
+            
+            //Text( Now(), "[$-en-US]mm/dd/yyyy hh:mm:ss AM/PM" )
+            Set(_startDate,Text( Now(), "[$-en-US]mm/dd/yyyy hh:mm:ss AM/PM"));
+            Set(_lookupReecord,LookUp(SNP_Master,Title=myOrganization));
+            
+            If(IsBlank(_lookupReecord),
+            Patch(SNP_Master,Defaults(SNP_Master),
+            {Title:myOrganization,startdate:_startDate,Status:{Value:"Draft"},Last_Page:_currentPage,StakeholderType:Stakeholderclass}); ,
+            
+            Patch(SNP_Master,_lookupReecord,{startdate:_startDate}) );
+        X: =1291
+        Y: =679
+        ZIndex: =10
+
+    Arrow1 As arrow.backArrow:
+        Fill: =RGBA(184, 0, 0, 1)
+        OnSelect: =Navigate(Instructions)
+        X: =26
+        Y: =679
+        ZIndex: =11
+
+    Image4_4 As image:
+        Height: =50
+        Image: =logo
+        OnSelect: =Navigate(Welcome_EN,ScreenTransition.Fade)
+        Width: =175
+        X: =1177
+        Y: =21
+        ZIndex: =12
+
+    "TabList1_1 As 'Tab list'.pcfdataset":
+        BasePaletteColor: =
+        DefaultSelectedItems: =[""]
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =0
+        Height: =55
+        Items: |-
+            =If(lang="En",
+            
+            ["","Representative of Stakeholder Organization (including FCM Partners)","Member of Professional Community/Consultant"],
+            ["","Representative of Stakeholder Organization (including FCM Partners)","Member of Professional Community/Consultant"])
+        OnSelect: =Set(tablistvalue, TabList1_1.Selected.Value)
+        Width: =964
+        X: =377
+        Y: =149
+        ZIndex: =13
+
+    "respondentName As 'Text input'":
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =0
+        Height: =50
+        OnChange: |-
+            =Set(myOrganizationLong,respondentName.Value);
+            Set(myOrganization, respondentName.Value)
+        ValidationState: ="None"
+        Visible: =TabList1_1.Selected.Value="Member of Professional Community/Consultant"
+        Width: =898
+        X: =393
+        Y: =285
+        ZIndex: =14
+
+    Label7 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(184, 0, 0, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =79
+        Size: =11
+        Text: =If(TabList1_1.Selected.Value="","Please first select your stakeholder category", "Now select your organization from the options below or provide details")
+        Width: =288
+        X: =88
+        Y: =135
+        ZIndex: =15
+
+    Image1 As image:
+        Height: =69
+        Image: |-
+            ="https://media2.giphy.com/media/nVE8OaIGkUhf7rkieR/200w.gif?cid=6c09b952a7t2j9tejfhofuu049pclrqijoavbomuf2zycju8&ep=v1_gifs_search&rid=200w.gif&ct=g"
+        Visible: =TabList1_1.Selected.Value=""
+        Width: =62
+        X: =9
+        Y: =142
+        ZIndex: =16
+
+    Label7_4 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(184, 0, 0, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =50
+        Text: ="Name of Respondent"
+        Visible: =TabList1_1.Selected.Value="Member of Professional Community/Consultant"
+        Width: =289
+        X: =88
+        Y: =285
+        ZIndex: =17
+
+    Label2_1 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =84
+        Size: =10
+        Text: |-
+            =If(TabList1_1.Selected.Value="","","You have indicated that you would be filling and responding to this survey on behalf of " & myOrganizationLong &". 
+            Click on the forward arrow to proceed.")
+        Visible: |-
+            =If(myOrganization<>"",true)
+            
+            
+            //TabList1_1.Selected.Value="Representative of Stakeholder Organization"
+        Width: =963
+        X: =218
+        Y: =662
+        ZIndex: =18
+
+    Image1_1 As image:
+        Height: =69
+        Image: |-
+            ="https://media2.giphy.com/media/nVE8OaIGkUhf7rkieR/200w.gif?cid=6c09b952a7t2j9tejfhofuu049pclrqijoavbomuf2zycju8&ep=v1_gifs_search&rid=200w.gif&ct=g"
+        Visible: =TabList1_1.Selected.Value<>"" 
+        Width: =62
+        X: =12
+        Y: =247
+        ZIndex: =26
+
+    Group11 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =26
+
+        blank As rectangle:
+            Fill: =RGBA(255, 255, 255, 0.9)
+            Height: =768
+            Visible: =_popup
+            Width: =1366
+            ZIndex: =19
+
+        Rectangle2 As rectangle:
+            BorderColor: =RGBA(219, 219, 219, 1)
+            BorderThickness: =1
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =374
+            Visible: =_popup
+            Width: =541
+            X: =411
+            Y: =195
+            ZIndex: =20
+
+        Button4 As button:
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            DisplayMode: |-
+                =If(LookUp(Master,Title=myOrganization,Status.Value)="Draft"
+                ,DisplayMode.Edit,DisplayMode.Disabled)
+            Fill: =RGBA(184, 0, 0, 1)
+            OnSelect: |
+                =
+                ClearCollect(SelectedItems,Filter(S1_SNP,Organization=myOrganization,Phase="Before"));
+                ClearCollect(SelectedCurrentItems,Filter(S1_SNP,Organization=myOrganization,Phase="After"));
+                
+                
+                Switch(LookUp(SNP_Master,Title=myOrganization,Last_Page),
+                 "BEFORE_EN_No_Interaction",Navigate(BEFORE_EN_No_Interaction),
+                 "BEFORE_EN_Collaboration",Navigate(BEFORE_EN_Collaboration),
+                 "BEFORE_EN_Coalition",Navigate(BEFORE_EN_Coalition),
+                 "BEFORE_EN_Coordination",Navigate(BEFORE_EN_Coordination),
+                 "BEFORE_EN_Cooperation",Navigate(BEFORE_EN_Cooperation),
+                 "BEFORE_EN_Networking",Navigate(BEFORE_EN_Networking),
+                 "AFTER_EN_No_Interaction",Navigate(AFTER_EN_No_Interaction),
+                 "AFTER_EN_Collaboration",Navigate(AFTER_EN_Collaboration),
+                 "AFTER_EN_Coalition",Navigate(AFTER_EN_Coalition),
+                 "AFTER_EN_Coordination",Navigate(AFTER_EN_Coordination),
+                  "AFTER_EN_Cooperation",Navigate(AFTER_EN_Cooperation),
+                   "AFTER_EN_Networking",Navigate(AFTER_EN_Networking),
+                 "Section II_EN",Navigate('Section II_EN'),
+                 "Section III_EN",Navigate('Section III_EN'),
+                 "Section IV_EN",Navigate('Section IV_EN'),
+                 
+                 Navigate(Understanding))
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =10
+            Text: ="Resume Session"
+            Visible: =_popup
+            X: =514
+            Y: =378
+            ZIndex: =21
+
+        Button4_1 As button:
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Fill: =RGBA(184, 0, 0, 1)
+            HoverFill: =Color.Black
+            OnSelect: =Set(_override,true)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =10
+            Text: ="Start Over"
+            Visible: =_popup
+            X: =705
+            Y: =378
+            ZIndex: =22
+
+        Label5 As label:
+            Align: =Align.Center
+            Height: =109
+            Size: =12
+            Text: |-
+                =If(LookUp(Master,Title=myOrganization,Status.Value)="Draft",
+                
+                "We found an incomplete survey in progress for "& myOrganization &" . 
+                Would you like to resume your session or start over?",
+                "A survey has already been completed for "& myOrganization &" . 
+                Would you like to start all over?")
+            Visible: =_popup
+            Width: =525
+            X: =420
+            Y: =269
+            ZIndex: =23
+
+        Icon4 As icon.Cancel:
+            Color: =RGBA(102, 102, 102, 1)
+            Height: =29
+            Icon: =Icon.Cancel
+            OnSelect: =Set(_popup,false);Set(_override,false);
+            Visible: =_popup
+            Width: =32
+            X: =905
+            Y: =214
+            ZIndex: =24
+
+        Label5_1 As label:
+            Align: =Align.Center
+            Color: =RGBA(184, 0, 0, 1)
+            Height: =53
+            Size: =9
+            Text: |-
+                ="* Starting over will override your existing records. 
+                 Please enter the override token that was provided to you in your enrolment email."
+            Visible: =_popup
+            Width: =525
+            X: =420
+            Y: =431
+            ZIndex: =25
+
+    Button4_26 As button:
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =0
+        DisplayMode: |-
+            =If(LookUp(PartnersList,ShortName=myOrganization,Override)=overridevalue.Text || "SNPCONSULT"=overridevalue.Text,
+            
+            DisplayMode.Edit,DisplayMode.Disabled)
+        Fill: =RGBA(184, 0, 0, 1)
+        Height: =38
+        HoverFill: =Color.Black
+        OnSelect: |-
+            =Set(_preloader,true);
+            
+            
+            RemoveIf(SNP_Master,Title=myOrganization);
+            RemoveIf(SNP_QuestionDatabase,Organization=myOrganization);
+            Navigate(Understanding);
+            RemoveIf(S1_SNP,Organization=myOrganization);
+            ClearCollect(Master,SNP_Master);
+            Set(_override,false);
+            
+            
+            ClearCollect(QDB,Filter(SNP_QuestionDatabase,Organization=myOrganization));
+            ClearCollect(MapDB,Filter(S1_SNP,Organization=myOrganization));
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =10
+        Text: ="Override"
+        Visible: =_override
+        Width: =110
+        X: =755
+        Y: =502
+        ZIndex: =27
+
+    overridevalue As text:
+        BorderColor: =RGBA(202, 202, 202, 1)
+        Default: =""
+        Height: =38
+        HintText: ="Enter Override Token"
+        Size: =10
+        Visible: =_override
+        Width: =226
+        X: =514
+        Y: =502
+        ZIndex: =28
+
+    Image6 As image:
+        Height: =41
+        Image: ='Spinner-1s-200px'
+        Visible: =_preloader
+        Width: =49
+        X: =865
+        Y: =499
+        ZIndex: =29
+
+    Group9 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =32
+
+        Rectangle5_16 As rectangle:
+            Fill: =RGBA(26, 26, 26, 1)
+            Height: =178
+            Visible: =TabList1_1.Selected.Value="Member of Professional Community/Consultant"
+            Width: =1278
+            X: =88
+            Y: =240
+            ZIndex: =2
+
+        Label11 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =60
+            Size: =10
+            Text: ="Please, in this survey provide your personal opinion as the consultant/ member of professional community. This will include your interaction with various AM organizations and MAMP activities."
+            Visible: =TabList1_1.Selected.Value="Member of Professional Community/Consultant"
+            Width: =1271
+            X: =88
+            Y: =354
+            ZIndex: =3
+

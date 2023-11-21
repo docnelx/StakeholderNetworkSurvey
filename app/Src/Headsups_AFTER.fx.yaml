@@ -1,0 +1,141 @@
+Headsups_AFTER As screen:
+    BackgroundImage: =
+    Fill: =RGBA(237, 237, 237, 1)
+    OnHidden: |-
+        =Patch(colTimeRecorder, Last(colTimeRecorder), {End: Now()});
+    OnVisible: |-
+        =Collect(colTimeRecorder,{Page: Self.Name,Start:Now(),End: ""});
+
+    Image10_1 As image:
+        Height: =761
+        Image: ='1693311356413'
+        Width: =478
+        X: =888
+        Y: =6
+        ZIndex: =1
+
+    Rectangle5_23 As rectangle:
+        Fill: =RGBA(255, 255, 255, 0.7)
+        Height: =586
+        Width: =1366
+        Y: =107
+        ZIndex: =2
+
+    Rectangle5_56 As rectangle:
+        Fill: =RGBA(237, 237, 237, 1)
+        Height: =110
+        Width: =1366
+        Y: =657
+        ZIndex: =3
+
+    Arrow2_7 As arrow:
+        Fill: =RGBA(184, 0, 0, 1)
+        OnSelect: |-
+            =
+            Navigate(AFTER_EN_No_Interaction,ScreenTransition.Fade)
+        X: =1278
+        Y: =687
+        ZIndex: =4
+
+    Label2_12 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        Size: =9
+        Text: ="Next"
+        Width: =87
+        X: =1259
+        Y: =737
+        ZIndex: =5
+
+    Label3_3 As label:
+        Height: =355
+        Text: |-
+            ="The purpose of the network survey is to gather information from key municipal sector AM actors to measure progress towards program outcomes and capture meaningful feedback to continuously improve MAMPs offerings to support the field of AM.
+            
+            The survey will: 
+            -	Capture and measure change in AM network over the course of MAMP
+            -	Measure MAMPs contribution to AM sector actors’ organisation change
+            -	Measure MAMP knowledge products usefulness for improving asset management practices
+            -	Capture feedback on MAMP overall
+            
+            "
+        Visible: =TabList1_4.Selected.Value="Introduction"
+        Width: =913
+        X: =27
+        Y: =178
+        ZIndex: =6
+
+    Arrow1_8 As arrow.backArrow:
+        Fill: =RGBA(184, 0, 0, 1)
+        OnSelect: |-
+            =If(Stakeholderclass = "Professional", Navigate(Welcome_EN,ScreenTransition.Fade),
+            
+            If(galmyOrganization.Selected.Before="Yes",
+            Navigate(BEFORE_EN_Networking,ScreenTransition.Fade),Navigate(Welcome_EN,ScreenTransition.Fade)))
+        X: =46
+        Y: =687
+        ZIndex: =7
+
+    Label2_18 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        Size: =9
+        Text: ="Back"
+        Width: =87
+        X: =27
+        Y: =737
+        ZIndex: =8
+
+    Image4_15 As image:
+        Height: =50
+        Image: =logo
+        OnSelect: =Navigate(Welcome_EN,ScreenTransition.Fade)
+        Width: =175
+        X: =1177
+        Y: =21
+        ZIndex: =9
+
+    "TabList1_4 As 'Tab list'.pcfdataset":
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =0
+        Height: =55
+        Items: =["Understanding Levels of Collaboration"]
+        OnSelect: =Set(tablistvalue, TabList1_4.Selected.Value)
+        Visible: =false
+        Width: =641
+        X: =13
+        Y: =106
+        ZIndex: =10
+
+    Image2_4 As image:
+        Height: =452
+        Image: =inte
+        Visible: =TabList1_4.Selected.Value="Introduction"
+        Width: =433
+        X: =895
+        Y: =129
+        ZIndex: =11
+
+    Label1_3 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =82
+        Text: ="Carefully completing this part will reduce the list of 45 organizations you will have to further classify in the next 5 groups."
+        Width: =1150
+        X: =47
+        Y: =369
+        ZIndex: =12
+
+    HtmlText3_1 As htmlViewer:
+        Height: =117
+        HtmlText: |-
+            ="Next, please complete your   <b><font color=#b80000><u>CURRENT</u></font></b>
+            level of interaction with the organizations, starting with the ones you currently have no interaction with."
+        Size: =20
+        Width: =1204
+        X: =47
+        Y: =302
+        ZIndex: =13
+

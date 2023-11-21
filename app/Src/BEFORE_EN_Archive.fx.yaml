@@ -1,0 +1,391 @@
+BEFORE_EN_Archive As screen:
+    BackgroundImage: ='Abstract-Grey-DNA-Molecular-Structure-Animated-Background-'
+
+    Rectangle5_24 As rectangle:
+        Fill: =RGBA(255, 255, 255, 0.9)
+        Height: =472
+        Width: =1366
+        Y: =231
+        ZIndex: =1
+
+    Rectangle5_4 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =79
+        Width: =1366
+        Y: =96
+        ZIndex: =3
+
+    ButtonCanvas1_20 As Button:
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =0
+        Height: =ButtonCanvasprev_2.Height
+        OnSelect: =Clear(SelectedItems)
+        Text: ="Reset"
+        Width: =ButtonCanvasprev_2.Width
+        X: =1085
+        Y: =703
+        ZIndex: =5
+
+    ButtonCanvas1_21 As Button:
+        BasePaletteColor: =
+        DisplayMode: =
+        FontSize: =0
+        Height: =ButtonCanvasprev_2.Height
+        OnSelect: =//Navigate(AFTER_EN_New_1,ScreenTransition.Fade)
+        Text: ="Proceed"
+        Width: =ButtonCanvasprev_2.Width
+        X: =1231
+        Y: =703
+        ZIndex: =8
+
+    ButtonCanvasprev_2 As Button:
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =0
+        Height: =50
+        OnSelect: =Back()
+        Text: ="Previous"
+        Width: =121
+        X: =935
+        Y: =703
+        ZIndex: =10
+
+    drpPhase_8 As dropdown:
+        Height: =38
+        Items: =["Before","Current"]
+        Visible: =false
+        Width: =77
+        X: =1288
+        Y: =71
+        ZIndex: =11
+
+    Image4_19 As image:
+        Height: =50
+        Image: =logo
+        OnSelect: =Navigate(Welcome_EN,ScreenTransition.Fade)
+        Width: =175
+        X: =1177
+        Y: =21
+        ZIndex: =12
+
+    Networking_6 As gallery.variableTemplateHeightGallery:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DelayItemLoading: =true
+        Height: =488
+        Items: |+
+            =Filter(
+            
+            Filter(
+            
+            Sort(Ungroup(Table({MyTables: Filter(PartnersList,Not(ShortName in SelectedItems.ShortName))},
+            
+            {MyTables:Filter(PartnersList, ShortName in Filter(SelectedItems,GalleryName =tabLevels_2.Selected.Value).ShortName)}), "MyTables"),ShortName,SortOrder.Ascending),ShortName<>myOrganization),Not(IsBlank(ShortName)))
+            
+            
+            
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplateFill: =RGBA(232, 34, 34, 0.1)
+        TemplateSize: =102
+        Width: =674
+        X: =350
+        Y: =194
+        ZIndex: =13
+
+        Title3_43 As label:
+            AutoHeight: =true
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =61
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =13
+            Strikethrough: =If(IsEmpty(Filter(SelectedItems, ShortName = ThisItem.ShortName,Not(GalleryName = tabLevels_2.Selected.Value))), false, true)
+            Text: =ThisItem.LongName & Char(13) &Char(13)
+            VerticalAlign: =VerticalAlign.Top
+            Width: =466
+            X: =53
+            Y: =11
+            ZIndex: =4
+
+        CheckboxCanvas2_45 As Checkbox:
+            BasePaletteColor: =
+            DisplayMode: =DisplayMode.Edit
+            FontSize: =0
+            Height: =52
+            Label: =" "
+            OnCheck: |-
+                =
+                Set(selectedGalleryName,tabLevels_2.Selected.Value);
+                Collect(SelectedItems, [{Organization: myOrganization,Phase:drpPhase_8.Selected.Value, ShortName:ThisItem.ShortName,GalleryName:selectedGalleryName, Concat:selectedGalleryName&ThisItem.ShortName}])
+            OnSelect: =Select(Parent)
+            OnUncheck: =RemoveIf(SelectedItems, ShortName = ThisItem.ShortName)
+            Visible: =If(IsEmpty(Filter(SelectedItems, ShortName = ThisItem.ShortName)), true, false)
+            Width: =49
+            X: =4
+            Y: =0
+            ZIndex: =5
+
+        Icon1_72 As icon.CheckBadge:
+            BorderColor: =RGBA(54, 176, 75, 1)
+            Color: =RGBA(152, 208, 70, 1)
+            Height: =35
+            Icon: =Icon.CheckBadge
+            OnSelect: =RemoveIf(SelectedItems, ShortName = ThisItem.ShortName)
+            Visible: =If(IsEmpty(Filter(SelectedItems, ShortName = ThisItem.ShortName,GalleryName=tabLevels_2.Selected.Value)), false, true)
+            Width: =35
+            X: =587
+            Y: =11
+            ZIndex: =6
+
+        Checkbox1_2 As checkbox:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Default: =
+            Height: =47
+            OnCheck: |-
+                =
+                Set(selectedGalleryName,tabLevels_2.Selected.Value);
+                Collect(SelectedItems, [{Organization: myOrganization,Phase:drpPhase_8.Selected.Value, ShortName:ThisItem.ShortName,GalleryName:selectedGalleryName, Concat:selectedGalleryName&ThisItem.ShortName}])
+            OnUncheck: =RemoveIf(SelectedItems, ShortName = ThisItem.ShortName)
+            Text: =""
+            Visible: |-
+                =false
+                //If(IsEmpty(Filter(SelectedItems, ShortName = ThisItem.ShortName)), true, false)
+            Width: =49
+            X: =4
+            Y: =5
+            ZIndex: =7
+
+    "tabLevels_2 As 'Tab list'.pcfdataset":
+        Alignment: ='TabList.Alignment'.Horizontal
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =0
+        Height: =73
+        Items: =["No Interaction","Collaboration","Coalition","Coordination","Cooperation","Networking"]
+        OnSelect: =Set(tablistvalue, tabLevels_2.Selected.Value)
+        Width: =917
+        X: =196
+        Y: =109
+        ZIndex: =14
+
+    Label7_3 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(184, 0, 0, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =59
+        Size: =10
+        Text: ="Select Level of Collaboration"
+        Width: =131
+        X: =12
+        Y: =109
+        ZIndex: =16
+
+    CompositeColumnChart1_2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =21
+
+        Title1_2 As label:
+            Align: =Align.Center
+            Height: =12
+            Text: ="Chart Title"
+            Visible: =false
+            Width: =296
+            X: =1056
+            Y: =257
+            ZIndex: =22
+
+        ColumnChart1_2 As barChart:
+            Height: =196
+            Items: =ColumnChartSample
+            Visible: =false
+            Width: =296
+            X: =1055
+            Y: =270
+            ZIndex: =23
+
+        Legend1_2 As legend:
+            Height: =39
+            ItemColorSet: =ColumnChart1_2.ItemColorSet
+            Items: =ColumnChart1_2.SeriesLabels
+            Visible: =false
+            Width: =237
+            X: =1085
+            Y: =468
+            ZIndex: =24
+
+    Group1_16 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =23
+
+        Label2_76 As label:
+            FontWeight: =FontWeight.Lighter
+            Height: =42
+            Size: =12
+            Text: ="Municipal Asset Management Program (MAMP)"
+            Width: =627
+            X: =12
+            Y: =8
+            ZIndex: =6
+
+        Label2_77 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =88
+            Size: =14
+            Text: ="Level of Interaction before MAMP for " & myOrganizationLong
+            Width: =860
+            X: =12
+            Y: =8
+            ZIndex: =7
+
+    DataTable2_2 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        HeadingFill: =RGBA(184, 0, 0, 1)
+        Height: =305
+        Items: |-
+            =SortByColumns(
+            Table({Level: "No Interaction", Count: CountRows(Filter(SelectedItems,GalleryName="No Interaction"))},
+            {Level: "Networking", Count: CountRows(Filter(SelectedItems,GalleryName="Networking"))},
+            {Level: "Cooperation", Count: CountRows(Filter(SelectedItems,GalleryName="Cooperation"))},
+            {Level: "Coordination", Count: CountRows(Filter(SelectedItems,GalleryName="Coordination"))},
+            {Level: "Coalition", Count: CountRows(Filter(SelectedItems,GalleryName="Coalition"))},
+            {Level: "Collaboration", Count: CountRows(Filter(SelectedItems,GalleryName="Collaboration"))},
+            {Level: "Unassigned", Count: CountRows(PartnersList) -1 - CountRows(Filter(SelectedItems,Phase=drpPhase_8.Selected.Value))}),"Count",SortOrder.Descending)
+        Width: =296
+        X: =1055
+        Y: =257
+        ZIndex: =25
+
+        Level_Column1_2 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Level"
+            FieldName: ="Level"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Level
+            Width: =185
+            X: =21
+            Y: =0
+            ZIndex: =8
+
+        Count_Column1_2 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Count"
+            FieldName: ="Count"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.Count
+            Width: =97
+            X: =0
+            Y: =0
+            ZIndex: =10
+
+    Group2_2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =26
+
+        Rectangle1_12 As rectangle:
+            Fill: =RGBA(99, 139, 44, 1)
+            Height: =102
+            Width: =329
+            X: =12
+            Y: =589
+            ZIndex: =2
+
+        Rectangle1_11 As rectangle:
+            Fill: =RGBA(184, 0, 0, 1)
+            Height: =368
+            Width: =329
+            X: =11
+            Y: =201
+            ZIndex: =15
+
+        Label9_2 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =300
+            Text: |-
+                =Switch(tabLevels_2.Selected.Value,
+                
+                "No Interaction","NO INTERATION:
+                
+                Please, first select organisations with whom you do not have any interaction at all, including no formal communication, no providing of information, etc. ",
+                "Networking","NETWORKING:
+                
+                Stakeholders who are networking are aware of each other, loosely defined roles or relationship. Have little communication and no shared decision-making.
+                
+                Please, select the organizations you are networking with from the list and click Next.",
+                "Cooperation","COOPERATION:
+                
+                Stakeholders who cooperate with each other provide information but do not share resources, somewhat define roles or relationship. They have formal communication and no shared decision-making.
+                
+                Please select the organizations you cooperate with from the list and click Next level.",
+                "Coordination","COORDINATION:
+                
+                Stakeholders who coordinate with each other also share information and resources. They have defined roles or relationship, frequently communicate and have some shared decision-making.
+                
+                Please, select the organizations you coordinate with from the list and click Next level.",
+                "Coalition","COALITION:
+                
+                Stakeholders who are in coalition with each other share ideas, resources AND have frequent and prioritized communication. All the coalition members have a vote in a decision. 
+                
+                Please, select the organizations you have a coalition with from the list and click Next level. ",
+                 "COLLABORATION:
+                 
+                Stakeholders who collaborate with each other are usually the members of one system. Their frequent communication is characterized by mutual trust. They reach consensus on all decisions.
+                
+                Please, select the organizations you collaborate with from the list and click Next level. ")
+            Width: =313
+            X: =19
+            Y: =262
+            ZIndex: =17
+
+        Image1_8 As image:
+            Height: =61
+            Image: =ideas
+            Width: =67
+            X: =12
+            Y: =224
+            ZIndex: =18
+
+        Label2_78 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =69
+            Size: =12
+            Text: ="Click on the green tick icon to unlock an already selected partner"
+            Width: =257
+            X: =20
+            Y: =613
+            ZIndex: =19
+
+        Icon1_73 As icon.CheckBadge:
+            BorderColor: =RGBA(54, 176, 75, 1)
+            Color: =RGBA(152, 208, 70, 1)
+            Height: =50
+            Icon: =Icon.CheckBadge
+            Width: =55
+            X: =265
+            Y: =622
+            ZIndex: =20
+

@@ -1,0 +1,106 @@
+Screen2Not_Needed As screen:
+
+    DataTable2 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =500
+        Items: =FinalDurations
+        Width: =800
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+        End_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="End"
+            FieldName: ="End"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.End
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        Page_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Page"
+            FieldName: ="Page"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.Page
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        Start_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Start"
+            FieldName: ="Start"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.Start
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+    CheckboxCanvas1 As Checkbox:
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =0
+        Height: =32
+        Width: =160
+        X: =60
+        Y: =60
+        ZIndex: =2
+
+    Button3 As button:
+        OnSelect: |-
+            =Concurrent(RemoveIf(SNP_Master,'Created By'.DisplayName="Damilare Olaoye");,
+            RemoveIf(SNP_QuestionDatabase,'Created By'.DisplayName="Damilare Olaoye");,
+            RemoveIf(SNP_Timings,'Created By'.DisplayName="Damilare Olaoye");,
+            RemoveIf(S1_SNP,'Created By'.DisplayName="Damilare Olaoye");)
+        Text: ="Button"
+        X: =1113
+        Y: =405
+        ZIndex: =3
+
+    Dropdown1 As dropdown:
+        Items: =Master.Title
+        X: =40
+        Y: =604
+        ZIndex: =4
+
+    Button5 As button:
+        OnSelect: |-
+            =Concurrent(
+            
+            RemoveIf(S1_SNP,Organization=Dropdown1.Selected.Title);,
+            RemoveIf(SNP_QuestionDatabase,Organization=Dropdown1.Selected.Title);,
+            RemoveIf(SNP_Master,Title=Dropdown1.Selected.Title);)
+        Size: =10
+        Text: ="RemoveAll"
+        X: =40
+        Y: =682
+        ZIndex: =5
+
+    Button5_1 As button:
+        OnSelect: |-
+            =
+            
+            RemoveIf(S1_SNP,Organization=Dropdown1.Selected.Title);
+        Size: =10
+        Text: ="RemoveAll"
+        X: =270
+        Y: =682
+        ZIndex: =6
+

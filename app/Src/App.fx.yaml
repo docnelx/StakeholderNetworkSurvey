@@ -1,0 +1,69 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |
+        =ClearCollect(PartnersList,Partners611);
+        ClearCollect(KPQuestionsList,KP_7);
+        ClearCollect(ImpactMeasureList,Impact);
+        ClearCollect(ChangeList,Change);
+        ClearCollect(Master,SNP_Master);
+        Clear(SelectedItems);
+        Clear(SelectedCurrentItems);
+        Clear(finaldbs);
+        
+        
+        /*
+         If(lang="En",Set(drpchangesArray,["Significantly Increased",
+        "Increased",
+        "No Change",
+        "Decreased",
+        "Significantly Decreased",
+        "Not Sure",
+        "Not Applicable"]); 
+        ,
+        Set(drpchangesArray,
+        ["Augmentation importante",
+        "Augmentation",
+        "Aucun changement",
+        "Diminution",
+        "Diminution importante",
+        "Ne sait pas",
+        "s.o."]););
+        
+        If(lang="En",
+        Set(drpcontributionsArray,["Significant Positive Contribution",
+        "Some Positive Contribution",
+        "No Contribution",
+        "Some Negative Contribution",
+        "Significant Negative Contribution",
+        "Not Sure",
+        "Not Applicable"]);,
+        Set(drpcontributionsArray,["Contribution positive importante",
+        "Contribution positive",
+        "Aucune contribution",
+        "Contribution négative",
+        "Contribution négative importante",
+        "Ne sait pas",
+        "s.o."]););
+        
+        If(lang="En",
+        Set(drpKPArray,
+        ["Very Useful",
+        "Somewhat Useful",
+        "Not at all Useful",
+        "I have not used this product"]
+        );,
+        Set(drpKPArray,
+        ["Très utiles",
+        "Plutôt utiles",
+        "Pas du tout utiles",
+        "Je n’ai pas utilisé ces produits"]
+        );)*/
+    Theme: =PlatinumTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

@@ -1,0 +1,9 @@
+[
+  {
+    "IsComponentScoped": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "db2",
+    "Type": "CollectionDataSourceInfo"
+  }
+]

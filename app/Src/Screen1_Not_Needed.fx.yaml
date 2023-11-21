@@ -1,0 +1,218 @@
+Screen1_Not_Needed As screen:
+
+    selectedcurrentitems As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =296
+        Items: =SelectedCurrentItems
+        Width: =800
+        X: =44
+        Y: =421
+        ZIndex: =1
+
+        GalleryName_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="GalleryName"
+            FieldName: ="GalleryName"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.GalleryName
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        Organization_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Organization"
+            FieldName: ="Organization"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.Organization
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+        Phase_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Phase"
+            FieldName: ="Phase"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.Phase
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        ShortName_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="ShortName"
+            FieldName: ="ShortName"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.ShortName
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+    "'selected items' As dataTable.datatable":
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =238
+        Items: =SelectedItems
+        Width: =800
+        X: =44
+        Y: =52
+        ZIndex: =2
+
+        GalleryName_Column1_1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="GalleryName"
+            FieldName: ="GalleryName"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.GalleryName
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        Organization_Column1_1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Organization"
+            FieldName: ="Organization"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.Organization
+            Width: =100
+            X: =152
+            Y: =0
+            ZIndex: =3
+
+        Phase_Column1_1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Phase"
+            FieldName: ="Phase"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.Phase
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        ShortName_Column1_1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="ShortName"
+            FieldName: ="ShortName"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.ShortName
+            Width: =96
+            X: =602
+            Y: =0
+            ZIndex: =5
+
+    Button1 As button:
+        OnSelect: =ClearCollect(FinalCollection,SelectedCurrentItems,SelectedItems)
+        Text: ="Button"
+        X: =970
+        Y: =52
+        ZIndex: =3
+
+    DataTable1_2 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =428
+        Items: =FinalCollection
+        Width: =582
+        X: =772
+        Y: =164
+        ZIndex: =4
+
+        GalleryName_Column1_2 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="GalleryName"
+            FieldName: ="GalleryName"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.GalleryName
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        Organization_Column1_2 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Organization"
+            FieldName: ="Organization"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.Organization
+            Width: =100
+            X: =129
+            Y: =0
+            ZIndex: =3
+
+        Phase_Column1_2 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Phase"
+            FieldName: ="Phase"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.Phase
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        ShortName_Column1_2 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="ShortName"
+            FieldName: ="ShortName"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.ShortName
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+    Button1_1 As button:
+        OnSelect: =Patch(S1_SNP,FinalCollection)
+        Text: ="Button"
+        X: =924
+        Y: =636
+        ZIndex: =5
+

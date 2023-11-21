@@ -1,0 +1,102 @@
+Disclaimer As screen:
+    BackgroundImage: =
+    Fill: =RGBA(237, 237, 237, 1)
+    OnHidden: |-
+        =Patch(colTimeRecorder, Last(colTimeRecorder), {End: Now()});
+    OnVisible: |-
+        =Collect(colTimeRecorder,{Page: Self.Name,Start:Now(),End: ""});
+
+    Rectangle5_5 As rectangle:
+        Fill: =RGBA(255, 255, 255, 0.9)
+        Height: =586
+        Width: =1366
+        Y: =107
+        ZIndex: =1
+
+    Rectangle5_72 As rectangle:
+        Fill: =RGBA(237, 237, 237, 1)
+        Height: =120
+        Width: =1366
+        Y: =648
+        ZIndex: =2
+
+    Arrow1_26 As arrow.backArrow:
+        Fill: =RGBA(184, 0, 0, 1)
+        OnSelect: =Navigate(Landing)
+        X: =46
+        Y: =687
+        ZIndex: =6
+
+    Image4_34 As image:
+        Height: =50
+        Image: =logo
+        OnSelect: =Navigate(Welcome_EN,ScreenTransition.Fade)
+        Width: =175
+        X: =1177
+        Y: =21
+        ZIndex: =8
+
+    Group1_2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =9
+
+        Label2_7 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =42
+            Size: =9
+            Text: ="Municipal Asset Management Program"
+            Width: =365
+            X: =21
+            Y: =21
+            ZIndex: =3
+
+        Label2_9 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =36
+            Size: =17
+            Text: =If(lang="En","Stakeholder Network Survey - 2023","Sondage auprès du réseau des intervenants - 2023")
+            Width: =613
+            X: =21
+            Y: =62
+            ZIndex: =4
+
+    Arrow2_26 As arrow:
+        Fill: =RGBA(184, 0, 0, 1)
+        OnSelect: =Navigate(Instructions,ScreenTransition.Fade)
+        X: =1277
+        Y: =687
+        ZIndex: =10
+
+    Label13_1 As label:
+        Align: =Align.Justify
+        Height: =241
+        Text: |-
+            =If(lang="En",
+            
+            "Thank you for participating in the survey. The following questions will be used for general analytical use only. Although your email address was used for mailing, your specific responses will not be connected to you for analysis. Your individual responses will not be given to any third party. Proceeding to the survey implies that you understand and agree to the provisions in this disclaimer. 
+            
+            
+            This survey will take about 20 minutes.",
+            
+            "Merci d'avoir participé à l'enquête. Les questions suivantes seront utilisées uniquement à des fins analytiques générales. Bien que votre adresse e-mail ait été utilisée pour l'envoi de courrier, vos réponses spécifiques ne vous seront pas connectées à des fins d'analyse. Vos réponses individuelles ne seront transmises à aucun tiers. Le fait de répondre à l'enquête implique que vous comprenez et acceptez les dispositions de cette clause de non-responsabilité.
+            
+            
+            Cette enquête prendra environ 20 minutes.")
+        Width: =1306
+        X: =21
+        Y: =207
+        ZIndex: =12
+
+    Label13 As label:
+        Align: =Align.Justify
+        Color: =RGBA(184, 0, 0, 1)
+        Height: =121
+        Text: =If(lang="En","You will be able to answer the survey questions in multiple sittings. Whenever you want to take a break, click on the “Save and exit to continue later” button at the bottom of the screen. Use the same initial link to resume the survey.","Vous pourrez répondre aux questions de l'enquête en plusieurs séances. Chaque fois que vous souhaitez faire une pause, cliquez sur le bouton « Enregistrer et quitter pour continuer plus tard » en bas de l'écran. Utilisez le même lien initial pour reprendre l'enquête.")
+        Width: =1306
+        X: =21
+        Y: =419
+        ZIndex: =13
+

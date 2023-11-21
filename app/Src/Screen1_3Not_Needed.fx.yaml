@@ -1,0 +1,172 @@
+Screen1_3Not_Needed As screen:
+
+    "galfinalMapDB As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
+        DelayItemLoading: =true
+        Items: =FinalCollection
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =90
+        Width: =775
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+        Title4 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Compliance Asset Id'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 86
+            X: =16
+            Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + lblInteraction.Size * 1.8)) / 2
+            ZIndex: =1
+
+        lblInteraction As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =36
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.GalleryName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =191
+            X: =16
+            Y: =46
+            ZIndex: =2
+
+        NextArrow4 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =50
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Tooltip: ="View item details"
+            Width: =50
+            X: =Parent.TemplateWidth - Self.Width - 12
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =3
+
+        Separator4 As rectangle:
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =4
+
+        Rectangle6 As rectangle:
+            Height: =Parent.TemplateHeight - Separator4.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =5
+
+        lblOrg As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =19
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Organization
+            VerticalAlign: =VerticalAlign.Top
+            Width: =376
+            X: =16
+            Y: =20
+            ZIndex: =6
+
+        lblPhase As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =19
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Phase
+            VerticalAlign: =VerticalAlign.Top
+            Width: =376
+            X: =241
+            Y: =20
+            ZIndex: =7
+
+        lblShortName As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =19
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.ShortName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =376
+            X: =241
+            Y: =51
+            ZIndex: =8
+
+        lblInteraction_1 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =19
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Concat
+            VerticalAlign: =VerticalAlign.Top
+            Width: =376
+            X: =399
+            Y: =21
+            ZIndex: =9
+
+        lblID As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =36
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.ID
+            VerticalAlign: =VerticalAlign.Top
+            Width: =191
+            X: =399
+            Y: =46
+            ZIndex: =10
+
+    Button5_3 As button:
+        Height: =70
+        OnSelect: |+
+            =ClearCollect(FinalCollection,SelectedCurrentItems,SelectedItems);
+            ClearCollect(MapDB,Filter(S1_SNP,Organization=myOrganization));
+            
+            If(CountRows(MapDB)=0,
+            Patch(S1_SNP,FinalCollection),
+            Patch(S1_SNP,ForAll(galfinalMapDB.AllItems,{ID:LookUp(MapDB,UniqueConcat=lblPhase.Text&lblShortName.Text,ID), GalleryName:lblInteraction.Text})))
+            
+            
+            
+        Text: ="Button"
+        X: =1012
+        Y: =288
+        ZIndex: =3
+
+    Label8 As label:
+        Text: =CountRows(MapDB)
+        X: =936
+        Y: =444
+        ZIndex: =4
+

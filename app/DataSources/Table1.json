@@ -1,0 +1,17 @@
+[
+  {
+    "Data": "[{\"Index\":1,\"KP\":\"Asset Management Readiness Scale (PDF, excel, how-to video)\"},{\"Index\":2,\"KP\":\"Asset Management Resources for Beginners (library of resources published by various authors)\"},{\"Index\":3,\"KP\":\"The building blocks of asset management: A how-to guide for reaching Level 1 of the Asset Management Readiness Scale (guide, webinar recording)\"},{\"Index\":4,\"KP\":\"Starting the asset management conversation with your municipal council: A communication tool\"},{\"Index\":5,\"KP\":\"Questions to ask BEFORE your municipality considers asset management software\"},{\"Index\":6,\"KP\":\"Case studies (e.g. Dunnottar, Warfield, Manitou Lake, Brockton)\"},{\"Index\":7,\"KP\":\"Asset management insights (various reports; e.g. policy and governance, people and leadership, etc.)\"},{\"Index\":8,\"KP\":\"Webinar recording: Practical advice for common AM challenges \"},{\"Index\":9,\"KP\":\"Tips for working with an asset management consultant (3 tip sheets)\"},{\"Index\":10,\"KP\":\"How to implement asset management in your municipality (video, case study, checklist)\"},{\"Index\":11,\"KP\":\"Asset Management Concepts\"},{\"Index\":12,\"KP\":\"AM Resource Library (library of resources published by various authors)\"},{\"Index\":13,\"KP\":\"Integrating Climate Considerations: Community planning\"},{\"Index\":14,\"KP\":\"Integrating Climate Considerations: Governance and Operations\"},{\"Index\":15,\"KP\":\"Integrating Climate Considerations: Service delivery planning\"},{\"Index\":16,\"KP\":\"Case studies: Using data to address water infrastructure vulnerabilities \"},{\"Index\":17,\"KP\":\"Learning journey: Climate resilience and asset management\"},{\"Index\":18,\"KP\":\"Video series: Climate resilience and asset management\"},{\"Index\":19,\"KP\":\"Case study: Local governments incorporate ecosystem needs into infrastructure plans\"},{\"Index\":20,\"KP\":\"Tools: Operations and maintenance for climate resilience\"}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "Table1",
+    "OrderedColumnNames": [
+      "Index",
+      "KP"
+    ],
+    "OriginalName": "Table1",
+    "OriginalSchema": "*[Index:n, KP:s]",
+    "Schema": "*[Index:n, KP:s]",
+    "Token": "dummyToken",
+    "Type": "StaticDataSourceInfo"
+  }
+]

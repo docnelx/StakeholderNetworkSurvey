@@ -1,0 +1,157 @@
+Complete As screen:
+    BackgroundImage: =
+    Fill: =RGBA(237, 237, 237, 1)
+    OnHidden: |-
+        =Patch(colTimeRecorder, Last(colTimeRecorder), {End: Now()});
+    OnVisible: |-
+        =Collect(colTimeRecorder,{Page: Self.Name,Start:Now(),End: ""});
+
+    Rectangle5_66 As rectangle:
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =86
+        Width: =1366
+        Y: =682
+        ZIndex: =1
+
+    Rectangle5_43 As rectangle:
+        Fill: =RGBA(255, 255, 255, 0.9)
+        Height: =534
+        Width: =1366
+        Y: =109
+        ZIndex: =2
+
+    Image4_12 As image:
+        Height: =50
+        Image: =logo
+        OnSelect: =Navigate(Welcome_EN,ScreenTransition.Fade)
+        Width: =175
+        X: =1177
+        Y: =21
+        ZIndex: =5
+
+    Icon2 As icon.CheckBadge:
+        Color: =RGBA(127, 178, 57, 1)
+        Height: =182
+        Icon: =Icon.CheckBadge
+        Width: =241
+        X: =545
+        Y: =197
+        ZIndex: =6
+
+    Label1_5 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =185
+        Size: =20
+        Text: ="Thank you for successfully completing the survey."
+        Width: =1366
+        Y: =362
+        ZIndex: =7
+
+    Label2_50 As label:
+        Align: =Align.Right
+        Color: =RGBA(237, 237, 237, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =48
+        Size: =9
+        Text: ="Email  Address"
+        Width: =160
+        X: =52
+        Y: =701
+        ZIndex: =8
+
+    "EmailText As 'Text input'":
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =0
+        Height: =48
+        Width: =501
+        X: =233
+        Y: =701
+        ZIndex: =9
+
+    Group1_9 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =9
+
+        Label2_47 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =42
+            Size: =9
+            Text: ="Municipal Asset Management Program"
+            Width: =365
+            X: =12
+            Y: =20
+            ZIndex: =3
+
+        Label2_48 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =36
+            Size: =17
+            Text: ="Stakeholder Network Survey - 2023"
+            Width: =430
+            X: =12
+            Y: =54
+            ZIndex: =4
+
+    Button2_2 As button:
+        BorderStyle: =BorderStyle.None
+        Fill: =RGBA(184, 0, 0, 1)
+        Height: =49
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: =Exit()
+        Size: =13
+        Text: ="Exit Survey"
+        Width: =199
+        X: =1001
+        Y: =697
+        ZIndex: =10
+
+    Button2_3 As button:
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(172, 62, 11, 1)
+        DisplayMode: |-
+            =If(
+                IsMatch(
+                    EmailText.Value,
+                    "^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$"
+                ),
+                DisplayMode.Edit,
+                DisplayMode.Disabled
+            )
+        Fill: =RGBA(237, 237, 237, 1)
+        Height: =52
+        HoverFill: =ColorFade(Self.Fill, -20%)
+        OnSelect: |-
+            =Patch(SNP_Master,_lookupReecord,{Email:EmailText.Value});
+            
+            
+            Office365Outlook.SendEmailV2(
+               EmailText.Value,
+                "Stakeholder Network Survey Report",
+                "This is to confirm that you will be receiving a copy of Network report once completed. 
+                 "& Char(13) &Char(13)
+            );
+        Size: =13
+        Text: ="  Request Report"
+        Width: =180
+        X: =786
+        Y: =697
+        ZIndex: =11
+
+    Label1_6 As label:
+        Align: =Align.Center
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(184, 0, 0, 1)
+        Fill: =RGBA(202, 202, 202, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =64
+        Size: =12
+        Text: ="Are you interested in receiving a copy of the network mapping results? If so, please enter your email address below and we will send you the dashboard when it is available. "
+        Width: =1366
+        Y: =607
+        ZIndex: =13
+

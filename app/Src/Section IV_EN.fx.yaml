@@ -1,0 +1,201 @@
+"'Section IV_EN' As screen":
+    BackgroundImage: =
+    Fill: =RGBA(237, 237, 237, 1)
+    OnHidden: |-
+        =Patch(colTimeRecorder, Last(colTimeRecorder), {End: Now()});
+    OnVisible: |-
+        =Set(_currentPage,"Section IV_EN");
+        Set(_popup,false);Collect(colTimeRecorder,{Page: Self.Name,Start:Now(),End: ""});
+
+    Rectangle5_12 As rectangle:
+        Fill: =RGBA(255, 255, 255, 0.9)
+        Height: =554
+        Width: =1366
+        Y: =138
+        ZIndex: =1
+
+    Rectangle5_65 As rectangle:
+        Fill: =RGBA(237, 237, 237, 1)
+        Height: =86
+        Width: =1366
+        Y: =682
+        ZIndex: =2
+
+    Arrow2_4 As arrow:
+        DisplayMode: =If(CountRows(Filter(ForAll(galsectionIV.AllItems,drpKP.Selected.Value),Not(Value in drpKPArray)))> 0 ,DisplayMode.Disabled,DisplayMode.Edit)
+        Fill: =RGBA(184, 0, 0, 1)
+        OnSelect: |+
+            =ClearCollect(QDB,Filter(SNP_QuestionDatabase,Organization=myOrganization));
+            
+            ClearCollect(db2,ForAll(galsectionII.AllItems,{Organization: myOrganization, Title: _question.Text, AnswerIndex1: drpchanges.Selected.Value, AnswerIndex2: drpcontributions.Selected.Value}));
+            
+            ClearCollect(db3,ForAll(galsectionIII.AllItems,{Organization: myOrganization, Title: quest.Text, AnswerIndex1: radoption.Selected.Response, AnswerIndex2:""}));
+            
+            ClearCollect(db4,ForAll(galsectionIV.AllItems,{Organization: myOrganization, Title: quess.Text, AnswerIndex1: drpKP.Selected.Value, AnswerIndex2: ""}));
+            ClearCollect(db5,ForAll(galsectionII_1.AllItems,{Organization: myOrganization, Title: _question_1.Text, AnswerIndex1: drpchanges_1.Selected.Value, AnswerIndex2: drpcontributions_1.Selected.Value}));
+            ClearCollect(finaldbs,db2,db3,db4,db5);
+            
+            
+            If(CountRows(QDB)=0,
+            Patch(SNP_QuestionDatabase,finaldbs),
+            Patch(SNP_QuestionDatabase,ForAll(galfinaldbs.AllItems,{ID:LookUp(QDB,Title=lblQuestion.Text,ID),AnswerIndex1:lblAnswerIndex1.Text,AnswerIndex2:lblAnswerIndex2.Text})));
+            
+            
+            ClearCollect(FinalCollection,SelectedCurrentItems,SelectedItems);
+            ClearCollect(MapDB,Filter(S1_SNP,Organization=myOrganization));
+            
+            If(CountRows(MapDB)=0,
+            Patch(S1_SNP,FinalCollection),
+            Patch(S1_SNP,ForAll(galfinalMapDB.AllItems,{ID:LookUp(MapDB,UniqueConcat=lblPhase.Text&lblShortName.Text,ID), GalleryName:lblInteraction.Text})));
+            
+            
+            
+            
+            Navigate('Final Thoughts',ScreenTransition.Fade);
+            
+            Set(_lookupReecord,LookUp(SNP_Master,Title=myOrganization));
+            Set(_endDate,Text( Now(), "[$-en-US]mm/dd/yyyy hh:mm:ss AM/PM" ));
+            If(IsBlank(_lookupReecord),
+            
+            Patch(SNP_Master,Defaults(SNP_Master),
+            {Title:myOrganization,Status:{Value:"Completed"},end:DateTimeValue(_endDate),Last_Page:_currentPage}); ,
+            
+            Patch(SNP_Master,_lookupReecord,{Status:{Value:"Completed"},enddate:_endDate,Last_Page:_currentPage}) );
+            
+            
+        X: =1302
+        Y: =700
+        ZIndex: =5
+
+    Label2_46 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =18
+        Size: =9
+        Text: ="Complete"
+        Width: =78
+        X: =1288
+        Y: =750
+        ZIndex: =6
+
+    Arrow1_4 As arrow.backArrow:
+        Fill: =RGBA(184, 0, 0, 1)
+        OnSelect: =Navigate('Section III_EN')
+        X: =46
+        Y: =687
+        ZIndex: =7
+
+    Image4_11 As image:
+        Height: =50
+        Image: =logo
+        OnSelect: =Navigate(Welcome_EN,ScreenTransition.Fade)
+        Width: =175
+        X: =1177
+        Y: =21
+        ZIndex: =9
+
+    Group1_8 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =9
+
+        Label2_43 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =42
+            Size: =9
+            Text: ="Municipal Asset Management Program"
+            Width: =365
+            X: =12
+            Y: =20
+            ZIndex: =3
+
+        Label2_44 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =84
+            Size: =17
+            Text: |-
+                =If(lang="En","Consider the extent to which MAMP knowledge products are useful to support municipalities in improving their AM practices.  Please indicate your use and the extent of usefulness of MAMP knowledge products:","Dans quelle mesure les produits de connaissances suivants du PGAM sont-ils utiles pour aider les municipalités à améliorer leurs pratiques de gestion des actifs?")
+            Width: =1153
+            X: =12
+            Y: =54
+            ZIndex: =4
+
+    galsectionIV As gallery.variableTemplateHeightGallery:
+        DelayItemLoading: =true
+        Fill: =RGBA(0,0,0,0)
+        Height: =473
+        Items: =KPQuestionsList
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateFill: =RGBA(232, 34, 34, 0.1)
+        TemplateSize: =102
+        Width: =1253
+        X: =70
+        Y: =169
+        ZIndex: =10
+
+        quess As label:
+            AutoHeight: =true
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(184, 0, 0, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =48
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: =If(lang="En",ThisItem.KP &Char(13) & Char(13),ThisItem.KP_FR &Char(13) & Char(13))
+            Width: =677
+            X: =7
+            Y: =11
+            ZIndex: =1
+
+        drpKP As Dropdown.pcfdataset:
+            BasePaletteColor: =
+            DefaultSelectedItems: |-
+                =
+                //{Value:{Value:Filter(SNP_QuestionDatabase,Organization=myOrganization,Title=quess.Text).AnswerIndex1}.Value}
+                
+                If(CountRows(QDB)>0,
+                {Value:LookUp(Filter(QDB,Organization=myOrganization),Title=quess.Text,AnswerIndex1)}
+                ,{Value:" "})
+            DisplayMode: =DisplayMode.Edit
+            FontSize: =0
+            Height: =48
+            Items: =drpKPArray
+            ValidationState: ="None"
+            Width: =252
+            X: =722
+            Y: =11
+            ZIndex: =2
+
+        LinkCanvas1 As Link:
+            BasePaletteColor: =
+            DisplayMode: =DisplayMode.Edit
+            FontSize: =0
+            Height: =67
+            Text: =If(lang="En",ThisItem.LinkDescription,ThisItem.LinkDescription_FR)
+            URL: =If(lang="En",ThisItem.Links,ThisItem.Links_FR)
+            Width: =214
+            X: =1008
+            Y: =11
+            ZIndex: =3
+
+    Label4 As label:
+        Text: =LookUp(Filter(SNP_QuestionDatabase,Organization=myOrganization),Title="Asset Management Readiness Scale",AnswerIndex1)
+        X: =637
+        Y: =184
+        ZIndex: =11
+
+    Label10_4 As label:
+        Align: =Align.Right
+        Color: =RGBA(184, 0, 0, 1)
+        Height: =71
+        Size: =10
+        Text: ="**unable to proceed. Please, provide answers to all the questions."
+        Visible: =If(Arrow2_4.DisplayMode = DisplayMode.Disabled,true,false)
+        Width: =328
+        X: =963
+        Y: =689
+        ZIndex: =12
+

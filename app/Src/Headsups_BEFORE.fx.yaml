@@ -1,0 +1,75 @@
+Headsups_BEFORE As screen:
+    BackgroundImage: =
+    Fill: =RGBA(237, 237, 237, 1)
+    OnHidden: |-
+        =Patch(colTimeRecorder, Last(colTimeRecorder), {End: Now()});
+    OnVisible: |-
+        =Collect(colTimeRecorder,{Page: Self.Name,Start:Now(),End: ""});
+
+    Image10 As image:
+        Height: =761
+        Image: ='1693311356413'
+        Width: =478
+        X: =888
+        Y: =6
+        ZIndex: =1
+
+    Rectangle5_3 As rectangle:
+        Fill: =RGBA(255, 255, 255, 0.8)
+        Height: =541
+        Width: =1366
+        Y: =107
+        ZIndex: =2
+
+    Rectangle5_49 As rectangle:
+        Fill: =RGBA(237, 237, 237, 1)
+        Height: =120
+        Width: =1366
+        Y: =648
+        ZIndex: =3
+
+    Arrow2_6 As arrow:
+        Fill: =RGBA(184, 0, 0, 1)
+        OnSelect: |-
+            =
+            
+            Navigate(BEFORE_EN_No_Interaction,ScreenTransition.Fade)
+        X: =1279
+        Y: =693
+        ZIndex: =4
+
+    Arrow1_7 As arrow.backArrow:
+        Fill: =RGBA(184, 0, 0, 1)
+        OnSelect: =Navigate(Understanding)
+        X: =46
+        Y: =687
+        ZIndex: =6
+
+    Image4_14 As image:
+        Height: =50
+        Image: =logo
+        OnSelect: =Navigate(Welcome_EN,ScreenTransition.Fade)
+        Width: =175
+        X: =1177
+        Y: =21
+        ZIndex: =8
+
+    Label1_2 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =82
+        Text: ="Carefully completing this will reduce the list of 45 organizations you will have to further classify in 5 groups. Later we will ask you to do this one more time in order to evaluate your current interaction with these organizations.”"
+        Width: =1150
+        X: =27
+        Y: =349
+        ZIndex: =10
+
+    HtmlText3 As htmlViewer:
+        Height: =117
+        HtmlText: |-
+            ="First, please select the list of organizations you believe " &myOrganization& " had no interactions with  <b><font color=#b80000><u>prior to MAMP</u></font></b>."
+        Size: =20
+        Width: =1204
+        X: =27
+        Y: =282
+        ZIndex: =12
+
