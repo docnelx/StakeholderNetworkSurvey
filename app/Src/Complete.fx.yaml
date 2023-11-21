@@ -43,7 +43,7 @@ Complete As screen:
         FontWeight: =FontWeight.Semibold
         Height: =185
         Size: =20
-        Text: ="Thank you for successfully completing the survey."
+        Text: =If(lang="En","Thank you for successfully completing the survey.","Merci d’avoir répondu au sondage avec succès.")
         Width: =1366
         Y: =362
         ZIndex: =7
@@ -54,7 +54,7 @@ Complete As screen:
         FontWeight: =FontWeight.Semibold
         Height: =48
         Size: =9
-        Text: ="Email  Address"
+        Text: =If(lang="En","Email  Address","Adresse courriel")
         Width: =160
         X: =52
         Y: =701
@@ -81,7 +81,7 @@ Complete As screen:
             FontWeight: =FontWeight.Semibold
             Height: =42
             Size: =9
-            Text: ="Municipal Asset Management Program"
+            Text: =If(lang="En","Municipal Asset Management Program","Programme de gestion des actifs municipaux (PGAM)")
             Width: =365
             X: =12
             Y: =20
@@ -91,8 +91,8 @@ Complete As screen:
             FontWeight: =FontWeight.Semibold
             Height: =36
             Size: =17
-            Text: ="Stakeholder Network Survey - 2023"
-            Width: =430
+            Text: =If(lang="En","Stakeholder Network Survey - 2023","Sondage auprès du réseau des intervenants - 2023")
+            Width: =565
             X: =12
             Y: =54
             ZIndex: =4
@@ -131,9 +131,9 @@ Complete As screen:
             
             Office365Outlook.SendEmailV2(
                EmailText.Value,
-                "Stakeholder Network Survey Report",
-                "This is to confirm that you will be receiving a copy of Network report once completed. 
-                 "& Char(13) &Char(13)
+                If(lang="En","Stakeholder Network Survey Report","Rapport du sondage auprès du réseau des intervenants"),
+                If(lang="En","This is to confirm that you will be receiving a copy of Network report once completed. 
+                 ","Ceci confirme que vous recevrez une copie du rapport sur le réseau une fois le sondage rempli.")& Char(13) &Char(13)
             );
         Size: =13
         Text: ="  Request Report"
@@ -150,7 +150,7 @@ Complete As screen:
         FontWeight: =FontWeight.Semibold
         Height: =64
         Size: =12
-        Text: ="Are you interested in receiving a copy of the network mapping results? If so, please enter your email address below and we will send you the dashboard when it is available. "
+        Text: =If(lang="En","Are you interested in receiving a copy of the network mapping results? If so, please enter your email address below and we will send you the dashboard when it is available. ","Souhaitez-vous recevoir une copie des résultats de la cartographie du réseau? Si c’est le cas, veuillez entrer votre adresse courriel ci-dessous et nous vous enverrons le tableau de bord lorsqu’il sera disponible.")
         Width: =1366
         Y: =607
         ZIndex: =13

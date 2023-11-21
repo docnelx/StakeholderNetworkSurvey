@@ -48,10 +48,10 @@ Landing As screen:
 
     Label2_67 As label:
         FontWeight: =FontWeight.Semibold
-        Height: =42
+        Height: =24
         Size: =9
-        Text: ="Municipal Asset Management Program (MAMP)"
-        Width: =365
+        Text: ="Municipal Asset Management Program (MAMP)/ Programme de gestion des actifs municipaux (PGAM)"
+        Width: =666
         X: =12
         Y: =20
         ZIndex: =6
@@ -79,10 +79,10 @@ Landing As screen:
     Label2_70 As label:
         Align: =Align.Center
         FontWeight: =FontWeight.Semibold
-        Height: =31
+        Height: =41
         Size: =9
-        Text: ="Exit Survey"
-        Width: =87
+        Text: ="Exit Survey/ Quitter le sondage "
+        Width: =204
         X: =88
         Y: =688
         ZIndex: =9

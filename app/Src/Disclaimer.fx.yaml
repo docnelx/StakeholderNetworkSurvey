@@ -47,7 +47,7 @@ Disclaimer As screen:
             FontWeight: =FontWeight.Semibold
             Height: =42
             Size: =9
-            Text: ="Municipal Asset Management Program"
+            Text: =If(lang="En","Municipal Asset Management Program","Programme de gestion des actifs municipaux (PGAM)")
             Width: =365
             X: =21
             Y: =21
