@@ -81,10 +81,10 @@ Disclaimer As screen:
             
             This survey will take about 20 minutes.",
             
-            "Merci d'avoir participé à l'enquête. Les questions suivantes seront utilisées uniquement à des fins analytiques générales. Bien que votre adresse e-mail ait été utilisée pour l'envoi de courrier, vos réponses spécifiques ne vous seront pas connectées à des fins d'analyse. Vos réponses individuelles ne seront transmises à aucun tiers. Le fait de répondre à l'enquête implique que vous comprenez et acceptez les dispositions de cette clause de non-responsabilité.
+            "Merci de participer au sondage. Les questions suivantes seront utilisées à des fins analytiques générales seulement. Bien que votre adresse courriel ait été utilisée pour l’envoi du sondage, vos réponses demeureront anonymes aux fins d’analyse, et elles ne seront pas communiquées à une tierce partie. En remplissant le sondage, vous signifiez que vous comprenez et acceptez les dispositions du présent avis de non-responsabilité. 
             
             
-            Cette enquête prendra environ 20 minutes.")
+            Ce sondage vous prendra environ 20 minutes.")
         Width: =1306
         X: =21
         Y: =207
@@ -94,7 +94,7 @@ Disclaimer As screen:
         Align: =Align.Justify
         Color: =RGBA(184, 0, 0, 1)
         Height: =121
-        Text: =If(lang="En","You will be able to answer the survey questions in multiple sittings. Whenever you want to take a break, click on the “Save and exit to continue later” button at the bottom of the screen. Use the same initial link to resume the survey.","Vous pourrez répondre aux questions de l'enquête en plusieurs séances. Chaque fois que vous souhaitez faire une pause, cliquez sur le bouton « Enregistrer et quitter pour continuer plus tard » en bas de l'écran. Utilisez le même lien initial pour reprendre l'enquête.")
+        Text: =If(lang="En","You will be able to answer the survey questions in multiple sittings. Whenever you want to take a break, click on the “Save and exit to continue later” button at the bottom of the screen. Use the same initial link to resume the survey.","Vous pourrez répondre aux questions du sondage en plusieurs séances. Chaque fois que vous voulez faire une pause, cliquez sur le bouton « Sauvegarder et quitter pour continuer plus tard » au bas de l’écran. Utilisez le même lien initial pour reprendre le sondage.")
         Width: =1306
         X: =21
         Y: =419
