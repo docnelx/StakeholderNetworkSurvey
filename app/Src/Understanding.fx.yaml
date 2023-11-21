@@ -90,12 +90,13 @@ Understanding As screen:
 
     Label1 As label:
         FontWeight: =FontWeight.Semibold
-        Height: =140
+        Height: =161
         Size: =20
         Text: |-
-            ="Section One.
-            Over the next few pages, we will ask you to classify stakeholder organizations from the list into the following categories based on your level of interaction, as explained below. Each organization from the list must be put into a category."
-        Width: =1118
+            =If(lang="En","Section One.
+            Over the next few pages, we will ask you to classify stakeholder organizations from the list into the following categories based on your level of interaction, as explained below. Each organization from the list must be put into a category.","Section 1
+            Dans les prochaines pages, nous vous demanderons de classer les organismes d’intervenants figurant sur la liste dans les catégories suivantes en fonction de votre niveau d’interaction, tel qu’expliqué ci-dessous. Chaque organisme figurant sur la liste doit être classé dans une catégorie.")
+        Width: =1180
         X: =13
         ZIndex: =11
 
@@ -201,7 +202,9 @@ Understanding As screen:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
         Height: =31
-        Text: ="NO INTERACTION"
+        Text: |-
+            =If(lang="En","NO INTERACTION","Aucune interaction
+            ")
         Width: =178
         X: =27
         Y: =182
@@ -211,7 +214,7 @@ Understanding As screen:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
         Height: =31
-        Text: ="COLLABORATION"
+        Text: =If(lang="En","COLLABORATION","Collaboration")
         Width: =178
         X: =247
         Y: =182
@@ -221,7 +224,7 @@ Understanding As screen:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
         Height: =31
-        Text: ="COALITION"
+        Text: =If(lang="En","COALITION","Coalition")
         Width: =178
         X: =474
         Y: =182
@@ -231,7 +234,7 @@ Understanding As screen:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
         Height: =31
-        Text: ="COORDINATION"
+        Text: =If(lang="En","COORDINATION","Coordination")
         Width: =178
         X: =701
         Y: =182
@@ -241,7 +244,7 @@ Understanding As screen:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
         Height: =31
-        Text: ="COOPERATION"
+        Text: =If(lang="En","COOPERATION","Coopération")
         Width: =178
         X: =924
         Y: =182
@@ -251,7 +254,7 @@ Understanding As screen:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
         Height: =31
-        Text: ="NETWORKING"
+        Text: =If(lang="En","NETWORKING","Réseautage")
         Width: =178
         X: =1150
         Y: =181
@@ -269,9 +272,11 @@ Understanding As screen:
         Height: =249
         Size: =12
         Text: |-
-            ="Stakeholders who collaborate with each other are usually the members of one system. 
+            =If(lang="En","Stakeholders who collaborate with each other are usually the members of one system. 
             
-            Their frequent communication is characterized by mutual trust. They reach consensus on all decisions."
+            Their frequent communication is characterized by mutual trust. They reach consensus on all decisions.","Les intervenants qui collaborent entre eux sont habituellement membres d’un même réseau. 
+            
+            Leurs communications fréquentes sont caractérisées par la confiance mutuelle. Ils arrivent à un consensus sur toutes les décisions.")
         VerticalAlign: =VerticalAlign.Top
         Width: =215
         X: =247
@@ -282,9 +287,11 @@ Understanding As screen:
         Height: =234
         Size: =12
         Text: |
-            ="Stakeholders who are in coalition with each other share ideas, resources AND have frequent and prioritized communication.
+            =If(lang="En","Stakeholders who are in coalition with each other share ideas, resources AND have frequent and prioritized communication.
             
-             All the coalition members have a vote in a decision."
+             All the coalition members have a vote in a decision.","Les intervenants qui sont en coalition les uns avec les autres échangent des idées et des ressources ET ont des communications fréquentes et prioritaires.
+            
+            Tous les membres d’une coalition votent quand une décision est prise.")
         VerticalAlign: =VerticalAlign.Top
         Width: =215
         X: =466
@@ -295,9 +302,11 @@ Understanding As screen:
         Height: =234
         Size: =12
         Text: |
-            ="Stakeholders who coordinate with each other also share information and resources. 
+            =If(lang="En","Stakeholders who coordinate with each other also share information and resources. 
             
-            They have defined roles or relationship, frequently communicate and have some shared decision-making."
+            They have defined roles or relationship, frequently communicate and have some shared decision-making.","Les intervenants qui se coordonnent entre eux échangent également de l’information et des ressources. 
+            
+            Ils ont des rôles ou des relations définis, communiquent fréquemment et prennent des décisions en commun.")
         VerticalAlign: =VerticalAlign.Top
         Width: =215
         X: =698
@@ -305,14 +314,16 @@ Understanding As screen:
         ZIndex: =43
 
     Label9_44 As label:
-        Height: =234
+        Height: =264
         Size: =12
         Text: |
-            =
+            =If(lang="En",
             
             "Stakeholders who cooperate with each other provide information but do not share resources, somewhat define roles or relationship. 
             
-            They have formal communication and no shared decision-making"
+            They have formal communication and no shared decision-making","Les intervenants qui collaborent les uns avec les autres s’échangent de l’information, mais ne partagent pas les ressources, et définissent en gros les rôles ou les relations. 
+            
+            Ils communiquent officiellement et ne prennent pas de décisions en commun.")
         VerticalAlign: =VerticalAlign.Top
         Width: =215
         X: =916
@@ -323,10 +334,12 @@ Understanding As screen:
         Height: =234
         Size: =12
         Text: |-
-            ="Stakeholders who are networking are aware of each other, loosely defined roles or relationship. 
+            =If(lang="En","Stakeholders who are networking are aware of each other, loosely defined roles or relationship. 
             
             Have little communication and no shared decision-making.
-            "
+            ","Les intervenants qui sont en réseau se connaissent, et ils définissent vaguement leurs rôles ou leurs relations. 
+            
+            Ils communiquent peu et ne prennent pas de décisions en commun.")
         VerticalAlign: =VerticalAlign.Top
         Width: =215
         X: =1137
