@@ -50,7 +50,7 @@ Landing As screen:
         FontWeight: =FontWeight.Semibold
         Height: =42
         Size: =9
-        Text: ="Municipal Asset Management Program (MAMP)XXXX"
+        Text: ="Municipal Asset Management Program (MAMP)"
         Width: =365
         X: =12
         Y: =20
