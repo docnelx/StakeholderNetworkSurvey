@@ -50,7 +50,7 @@ Landing As screen:
         FontWeight: =FontWeight.Semibold
         Height: =42
         Size: =9
-        Text: ="Municipal Asset Management Program (MAMP)XXXX"
+        Text: ="Municipal Asset Management Program (MAMP)"
         Width: =365
         X: =12
         Y: =20
@@ -61,7 +61,7 @@ Landing As screen:
         FontWeight: =FontWeight.Bold
         Height: =289
         Size: =45
-        Text: ="Stakeholder Network Survey - 2023"
+        Text: ="Stakeholder Network Survey/ Sondage auprès du réseau des intervenants - 2023"
         Width: =692
         X: =26
         Y: =215
@@ -297,7 +297,7 @@ Landing As screen:
         Color: =RGBA(237, 237, 237, 1)
         Height: =34
         Size: =12
-        Text: ="select / sélectionnez"
+        Text: ="Select / Sélectionnez"
         Width: =434
         X: =757
         Y: =228
