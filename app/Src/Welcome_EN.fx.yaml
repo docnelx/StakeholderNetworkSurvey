@@ -367,10 +367,12 @@ Welcome_EN As screen:
             Text: |-
                 =If(LookUp(Master,Title=myOrganization,Status.Value)="Draft",
                 
-                "We found an incomplete survey in progress for "& myOrganization &" . 
-                Would you like to resume your session or start over?",
-                "A survey has already been completed for "& myOrganization &" . 
-                Would you like to start all over?")
+                If(lang="En","We found an incomplete survey in progress for "& myOrganization &" . 
+                Would you like to resume your session or start over?","Nous avons trouvé un sondage incomplet en cours pour "& myOrganization &". 
+                Voulez-vous reprendre votre séance ou recommencer du début?"),
+                If(lang="En","A survey has already been completed for "& myOrganization &" . 
+                Would you like to start all over?","Un sondage a déjà été rempli pour "& myOrganization &". 
+                Voulez-vous recommencer du début?"))
             Visible: =_popup
             Width: =525
             X: =420
@@ -394,8 +396,9 @@ Welcome_EN As screen:
             Height: =53
             Size: =9
             Text: |-
-                ="* Starting over will override your existing records. 
-                 Please enter the override token that was provided to you in your enrolment email."
+                =If(lang="En","* Starting over will override your existing records. 
+                 Please enter the override token that was provided to you in your enrolment email.","* Le fait de recommencer du début remplacera vos dossiers existants. 
+                 Veuillez entrer votre jeton de remplacement tel qu’il vous est fourni dans la communication relative à l’inscription que vous avez reçue.")
             Visible: =_popup
             Width: =525
             X: =420

@@ -136,10 +136,10 @@
         OnSelect: |+
             =Set(_popup,true);
             
-        Text: ="Save and exit to continue later"
+        Text: =If(lang="En","Save and exit to continue later","Sauvegarder et quitter pour continuer plus tard")
         Underline: =true
-        Width: =263
-        X: =537
+        Width: =414
+        X: =432
         Y: =693
         ZIndex: =10
 

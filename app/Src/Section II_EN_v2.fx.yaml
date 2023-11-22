@@ -151,8 +151,8 @@
         Height: =45
         Size: =10
         Text: |-
-            ="Changes
-            "
+            =If(lang="En","Changes
+            ","Le changement")
         Width: =366
         X: =473
         Y: =136
@@ -164,8 +164,8 @@
         Height: =53
         Size: =10
         Text: |-
-            ="MAMP's Contribution
-            "
+            =If(lang="En","MAMP's Contribution
+            ","La contribution du PGAM")
         Width: =183
         X: =959
         Y: =136
@@ -178,10 +178,10 @@
         OnSelect: |+
             =Set(_popup,true);
             
-        Text: ="Save and exit to continue later"
+        Text: =If(lang="En","Save and exit to continue later","Sauvegarder et quitter pour continuer plus tard")
         Underline: =true
-        Width: =263
-        X: =551
+        Width: =397
+        X: =496
         Y: =693
         ZIndex: =13
 
