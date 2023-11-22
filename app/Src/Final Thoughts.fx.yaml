@@ -78,7 +78,7 @@
         Color: =RGBA(184, 0, 0, 1)
         Height: =71
         Size: =10
-        Text: ="**unable to proceed due to incomplete selection from task above."
+        Text: =If(lang="En","*unable to proceed. Please, provide answers to all the questions.","*Impossible de continuer. Veuillez répondre à toutes les questions.")
         Visible: =If(Arrow2_10.DisplayMode = DisplayMode.Disabled,true,false)
         Width: =240
         X: =1048
@@ -94,25 +94,27 @@
 
         Label2_53 As label:
             FontWeight: =FontWeight.Semibold
-            Height: =115
+            Height: =153
             Size: =17
             Text: |-
-                ="Final thoughts, comments or recommendations.
+                =If(lang="En","Final thoughts, comments or recommendations.
                 We appreciate your feedback on MAMP's role in fostering collaboration and network building. 
-                If you are comfortable, please provide your name here so that we can use your testimonials in our program reporting. "
+                If you are comfortable, please provide your name here so that we can use your testimonials in our program reporting. ","Dernières réflexions, commentaires ou recommandations.
+                Nous vous sommes reconnaissants de vos commentaires sur le rôle du PGAM dans la promotion de la collaboration et la création de réseaux. 
+                Si vous êtes à l’aise de le faire, veuillez indiquer votre nom ici afin que nous puissions utiliser votre témoignage dans nos rapports sur le programme. ")
             Width: =1153
             X: =24
-            Y: =25
+            Y: =6
             ZIndex: =1
 
         Label2_45 As label:
             FontWeight: =FontWeight.Semibold
-            Height: =50
+            Height: =57
             Size: =12
-            Text: ="(optional)"
-            Width: =88
-            X: =1200
-            Y: =90
+            Text: =If(lang="En","(optional)","(facultatif)")
+            Width: =96
+            X: =1191
+            Y: =80
             ZIndex: =4
 
     finallthoughtstext As text:
@@ -126,10 +128,10 @@
 
     Label14 As label:
         Align: =Align.Center
-        Height: =43
-        Text: ="By clicking Next you are submitting your answers. Please, use the Back button now if you need to review or adjust you answers"
+        Height: =56
+        Text: =If(lang="En","By clicking Next you are submitting your answers. Please, use the Back button now if you need to review or adjust you answers","En cliquant sur Suivant, vous soumettez vos réponses. Veuillez utiliser le bouton Précédent maintenant si vous devez passer en revue ou modifier vos réponses.")
         Width: =1104
         X: =165
-        Y: =707
+        Y: =697
         ZIndex: =11
 

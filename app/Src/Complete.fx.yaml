@@ -104,7 +104,7 @@ Complete As screen:
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: =Exit()
         Size: =13
-        Text: ="Exit Survey"
+        Text: =If(lang="En","Exit Survey","Quitter le sondage ")
         Width: =199
         X: =1001
         Y: =697
@@ -136,7 +136,7 @@ Complete As screen:
                  ","Ceci confirme que vous recevrez une copie du rapport sur le réseau une fois le sondage rempli.")& Char(13) &Char(13)
             );*/
         Size: =13
-        Text: ="  Request Report"
+        Text: =If(lang="En","Request Report","Demander un rapport")
         Width: =180
         X: =786
         Y: =697

@@ -151,8 +151,8 @@
         Height: =45
         Size: =10
         Text: |-
-            ="Changes
-            "
+            =If(lang="En","Changes
+            ","Le changement")
         Width: =366
         X: =473
         Y: =136
@@ -164,8 +164,8 @@
         Height: =53
         Size: =10
         Text: |-
-            ="MAMP's Contribution
-            "
+            =If(lang="En","MAMP's Contribution
+            ","La contribution du PGAM")
         Width: =183
         X: =959
         Y: =136
@@ -256,7 +256,7 @@
             RadiusTopLeft: =0
             RadiusTopRight: =0
             Size: =10
-            Text: ="Yes, Save & Exit"
+            Text: =yesText
             Visible: =_popup
             X: =514
             Y: =378
@@ -270,7 +270,7 @@
             RadiusTopLeft: =0
             RadiusTopRight: =0
             Size: =10
-            Text: ="Cancel"
+            Text: =cancelText
             Visible: =_popup
             X: =705
             Y: =378
