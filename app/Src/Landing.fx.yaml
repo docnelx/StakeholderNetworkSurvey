@@ -104,7 +104,7 @@ Landing As screen:
         Fill: =RGBA(184, 0, 0, 1)
         Height: =96
         HoverFill: =ColorFade(Self.Fill, -20%)
-        OnSelect: |-
+        OnSelect: |+
             =Set(truevisible,false);
             Set(lang,"En");
             
@@ -187,9 +187,32 @@ Landing As screen:
             "Je n’ai pas utilisé ces produits"]
             ););
             
+            
+            
+            
+            
+            
+            
+            
+            
+            If(lang="En",
+            Set(savephrase,"Save and exit to continue later");
+            Set(yesText,"Yes, Save & Exit");
+            Set(cancelText,"Cancel");
+            Set(worryText,"* Do not worry, the survey would save your progress and restart from this page upon resumption");
+            Set(confirmationmsg,"Are you sure you want to save your current status and exit from this survey? ");,
+            Set(savephrase,"Sauvegarder et quitter pour continuer plus tard");
+            Set(yesText,"Oui, sauvegarder et quitter");
+            Set(cancelText,"Annuler");
+            Set(worryText,"* Ne vous inquiétez pas, le sondage vous permettra de sauvegarder vos progrès et de recommencer à partir de cette page à la reprise.");
+            Set(confirmationmsg,"Êtes-vous sûr de vouloir sauvegarder votre statut actuel et quitter le présent sondage?"));
+            
+            
             Patch(colTimeRecorder, Last(colTimeRecorder), {End: Now()});
             
-            Navigate(Disclaimer,ScreenTransition.Fade)
+            Navigate(Disclaimer,ScreenTransition.Fade);
+            
+            
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
@@ -284,6 +307,23 @@ Landing As screen:
             "Pas du tout utiles",
             "Je n’ai pas utilisé ces produits"]
             ););
+            
+            
+            
+            
+            If(lang="En",
+            Set(savephrase,"Save and exit to continue later");
+            Set(yesText,"Yes, Save & Exit");
+            Set(cancelText,"Cancel");
+            Set(worryText,"* Do not worry, the survey would save your progress and restart from this page upon resumption");
+            Set(confirmationmsg,"Are you sure you want to save your current status and exit from this survey? ");,
+            Set(savephrase,"Sauvegarder et quitter pour continuer plus tard");
+            Set(yesText,"Oui, sauvegarder et quitter");
+            Set(cancelText,"Annuler");
+            Set(worryText,"* Ne vous inquiétez pas, le sondage vous permettra de sauvegarder vos progrès et de recommencer à partir de cette page à la reprise.");
+            Set(confirmationmsg,"Êtes-vous sûr de vouloir sauvegarder votre statut actuel et quitter le présent sondage?"));
+            
+            
             
             Patch(colTimeRecorder, Last(colTimeRecorder), {End: Now()});
             

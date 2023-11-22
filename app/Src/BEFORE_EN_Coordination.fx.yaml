@@ -242,20 +242,6 @@ BEFORE_EN_Coordination As screen:
             Y: =109
             ZIndex: =12
 
-    Label9_17 As label:
-        Align: =Align.Right
-        Color: =RGBA(184, 0, 0, 1)
-        Height: =50
-        OnSelect: |+
-            =Set(_popup,true);
-            
-        Text: ="Save and exit to continue later"
-        Underline: =true
-        Width: =263
-        X: =579
-        Y: =718
-        ZIndex: =28
-
     Label9_37 As label:
         Align: =Align.Center
         Height: =150
@@ -418,4 +404,18 @@ BEFORE_EN_Coordination As screen:
         X: =12
         Y: =21
         ZIndex: =38
+
+    Label9_49 As label:
+        Align: =Align.Center
+        Color: =RGBA(184, 0, 0, 1)
+        Height: =54
+        OnSelect: |+
+            =Set(_popup,true);
+            
+        Text: =savephrase
+        Underline: =true
+        Width: =433
+        X: =496
+        Y: =699
+        ZIndex: =39
 

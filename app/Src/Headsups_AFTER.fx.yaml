@@ -37,17 +37,6 @@ Headsups_AFTER As screen:
         Y: =687
         ZIndex: =4
 
-    Label2_12 As label:
-        Align: =Align.Center
-        FontWeight: =FontWeight.Semibold
-        Height: =31
-        Size: =9
-        Text: ="Next"
-        Width: =87
-        X: =1259
-        Y: =737
-        ZIndex: =5
-
     Label3_3 As label:
         Height: =355
         Text: |-
@@ -76,17 +65,6 @@ Headsups_AFTER As screen:
         X: =46
         Y: =687
         ZIndex: =7
-
-    Label2_18 As label:
-        Align: =Align.Center
-        FontWeight: =FontWeight.Semibold
-        Height: =31
-        Size: =9
-        Text: ="Back"
-        Width: =87
-        X: =27
-        Y: =737
-        ZIndex: =8
 
     Image4_15 As image:
         Height: =50

@@ -128,13 +128,13 @@ Complete As screen:
         OnSelect: |-
             =Patch(SNP_Master,_lookupReecord,{Email:EmailText.Value});
             
-            
+            /*
             Office365Outlook.SendEmailV2(
                EmailText.Value,
                 If(lang="En","Stakeholder Network Survey Report","Rapport du sondage auprès du réseau des intervenants"),
                 If(lang="En","This is to confirm that you will be receiving a copy of Network report once completed. 
                  ","Ceci confirme que vous recevrez une copie du rapport sur le réseau une fois le sondage rempli.")& Char(13) &Char(13)
-            );
+            );*/
         Size: =13
         Text: ="  Request Report"
         Width: =180

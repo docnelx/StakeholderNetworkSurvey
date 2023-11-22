@@ -55,26 +55,6 @@
     "dependents": [],
     "id": "3060918a-2e9a-4226-ae4c-554d1ae5ed6b"
   },
-  "406b01c2-d38d-4e13-aaaf-5464b1044057": {
-    "appActions": [
-      "SendEmailV2"
-    ],
-    "connectionRef": {
-      "apiTier": "Standard",
-      "displayName": "Office 365 Outlook",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/office365/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_office365",
-      "parameterHints": {},
-      "parameterHintsV2": {}
-    },
-    "datasets": {},
-    "dataSources": [
-      "Office365Outlook"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "406b01c2-d38d-4e13-aaaf-5464b1044057"
-  },
   "49ad9ae3-918c-4e19-bcc7-8120d193e84f": {
     "appActions": [
       "providers/PowerPlatform.Governance/Operations/Read",

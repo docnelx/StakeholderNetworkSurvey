@@ -246,20 +246,6 @@ BEFORE_EN_Coalition As screen:
             Y: =119
             ZIndex: =12
 
-    Label9_16 As label:
-        Align: =Align.Right
-        Color: =RGBA(184, 0, 0, 1)
-        Height: =50
-        OnSelect: |+
-            =Set(_popup,true);
-            
-        Text: ="Save and exit to continue later"
-        Underline: =true
-        Width: =263
-        X: =579
-        Y: =718
-        ZIndex: =28
-
     Label9_36 As label:
         Align: =Align.Center
         Height: =150
@@ -422,4 +408,18 @@ BEFORE_EN_Coalition As screen:
         X: =24
         Y: =21
         ZIndex: =38
+
+    Label9_48 As label:
+        Align: =Align.Center
+        Color: =RGBA(184, 0, 0, 1)
+        Height: =54
+        OnSelect: |+
+            =Set(_popup,true);
+            
+        Text: =savephrase
+        Underline: =true
+        Width: =433
+        X: =496
+        Y: =699
+        ZIndex: =39
 

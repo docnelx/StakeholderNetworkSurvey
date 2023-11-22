@@ -464,49 +464,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BEFORE_EN_Coordination.Label9_17.FocusedBorderThickness"
+                  "fullyQualifiedName": "AFTER_EN_Coalition.Label9_54.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Coordination.Label9_17.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "BEFORE_EN_Coordination",
-                "type": "BEFORE_EN_Coordination.Label9_17"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BEFORE_EN_Coordination.Label9_17.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Coordination.Label9_17.TabIndex",
+                  "fullyQualifiedName": "AFTER_EN_Coalition.Label9_54.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "BEFORE_EN_Coordination",
-                "type": "BEFORE_EN_Coordination.Label9_17"
+                "module": "AFTER_EN_Coalition",
+                "type": "AFTER_EN_Coalition.Label9_54"
               }
             }
           ],
@@ -518,6 +488,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AFTER_EN_Coalition.Label9_54.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AFTER_EN_Coalition.Label9_54.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "AFTER_EN_Coalition",
+                "type": "AFTER_EN_Coalition.Label9_54"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -854,49 +854,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BEFORE_EN_Networking.Label9_19.FocusedBorderThickness"
+                  "fullyQualifiedName": "AFTER_EN_No_Interaction.Label9_52.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Networking.Label9_19.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "BEFORE_EN_Networking",
-                "type": "BEFORE_EN_Networking.Label9_19"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BEFORE_EN_Networking.Label9_19.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Networking.Label9_19.TabIndex",
+                  "fullyQualifiedName": "AFTER_EN_No_Interaction.Label9_52.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "BEFORE_EN_Networking",
-                "type": "BEFORE_EN_Networking.Label9_19"
+                "module": "AFTER_EN_No_Interaction",
+                "type": "AFTER_EN_No_Interaction.Label9_52"
               }
             }
           ],
@@ -908,6 +878,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AFTER_EN_No_Interaction.Label9_52.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AFTER_EN_No_Interaction.Label9_52.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "AFTER_EN_No_Interaction",
+                "type": "AFTER_EN_No_Interaction.Label9_52"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -5204,49 +5204,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BEFORE_EN_Collaboration.Label9_1.FocusedBorderThickness"
+                  "fullyQualifiedName": "AFTER_EN_Cooperation.Label9_56.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Collaboration.Label9_1.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "BEFORE_EN_Collaboration",
-                "type": "BEFORE_EN_Collaboration.Label9_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BEFORE_EN_Collaboration.Label9_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Collaboration.Label9_1.TabIndex",
+                  "fullyQualifiedName": "AFTER_EN_Cooperation.Label9_56.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "BEFORE_EN_Collaboration",
-                "type": "BEFORE_EN_Collaboration.Label9_1"
+                "module": "AFTER_EN_Cooperation",
+                "type": "AFTER_EN_Cooperation.Label9_56"
               }
             }
           ],
@@ -5258,6 +5228,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AFTER_EN_Cooperation.Label9_56.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AFTER_EN_Cooperation.Label9_56.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "AFTER_EN_Cooperation",
+                "type": "AFTER_EN_Cooperation.Label9_56"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -5774,49 +5774,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BEFORE_EN_Coalition.Label9_16.FocusedBorderThickness"
+                  "fullyQualifiedName": "AFTER_EN_Coordination.Label9_55.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Coalition.Label9_16.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "BEFORE_EN_Coalition",
-                "type": "BEFORE_EN_Coalition.Label9_16"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BEFORE_EN_Coalition.Label9_16.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Coalition.Label9_16.TabIndex",
+                  "fullyQualifiedName": "AFTER_EN_Coordination.Label9_55.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "BEFORE_EN_Coalition",
-                "type": "BEFORE_EN_Coalition.Label9_16"
+                "module": "AFTER_EN_Coordination",
+                "type": "AFTER_EN_Coordination.Label9_55"
               }
             }
           ],
@@ -5828,6 +5798,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AFTER_EN_Coordination.Label9_55.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AFTER_EN_Coordination.Label9_55.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "AFTER_EN_Coordination",
+                "type": "AFTER_EN_Coordination.Label9_55"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -6284,49 +6284,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AFTER_EN_Coalition.Label9_22.FocusedBorderThickness"
+                  "fullyQualifiedName": "BEFORE_EN_Coordination.Label9_49.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AFTER_EN_Coalition.Label9_22.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "AFTER_EN_Coalition",
-                "type": "AFTER_EN_Coalition.Label9_22"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AFTER_EN_Coalition.Label9_22.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AFTER_EN_Coalition.Label9_22.TabIndex",
+                  "fullyQualifiedName": "BEFORE_EN_Coordination.Label9_49.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "AFTER_EN_Coalition",
-                "type": "AFTER_EN_Coalition.Label9_22"
+                "module": "BEFORE_EN_Coordination",
+                "type": "BEFORE_EN_Coordination.Label9_49"
               }
             }
           ],
@@ -6338,6 +6308,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BEFORE_EN_Coordination.Label9_49.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BEFORE_EN_Coordination.Label9_49.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "BEFORE_EN_Coordination",
+                "type": "BEFORE_EN_Coordination.Label9_49"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8954,49 +8954,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AFTER_EN_Collaboration.Label9_21.FocusedBorderThickness"
+                  "fullyQualifiedName": "BEFORE_EN_Cooperation.Label9_50.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AFTER_EN_Collaboration.Label9_21.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "AFTER_EN_Collaboration",
-                "type": "AFTER_EN_Collaboration.Label9_21"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AFTER_EN_Collaboration.Label9_21.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AFTER_EN_Collaboration.Label9_21.TabIndex",
+                  "fullyQualifiedName": "BEFORE_EN_Cooperation.Label9_50.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "AFTER_EN_Collaboration",
-                "type": "AFTER_EN_Collaboration.Label9_21"
+                "module": "BEFORE_EN_Cooperation",
+                "type": "BEFORE_EN_Cooperation.Label9_50"
               }
             }
           ],
@@ -9008,6 +8978,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BEFORE_EN_Cooperation.Label9_50.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BEFORE_EN_Cooperation.Label9_50.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "BEFORE_EN_Cooperation",
+                "type": "BEFORE_EN_Cooperation.Label9_50"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -9464,49 +9464,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AFTER_EN_Cooperation.Label9_24.FocusedBorderThickness"
+                  "fullyQualifiedName": "BEFORE_EN_Coalition.Label9_48.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AFTER_EN_Cooperation.Label9_24.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "AFTER_EN_Cooperation",
-                "type": "AFTER_EN_Cooperation.Label9_24"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AFTER_EN_Cooperation.Label9_24.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AFTER_EN_Cooperation.Label9_24.TabIndex",
+                  "fullyQualifiedName": "BEFORE_EN_Coalition.Label9_48.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "AFTER_EN_Cooperation",
-                "type": "AFTER_EN_Cooperation.Label9_24"
+                "module": "BEFORE_EN_Coalition",
+                "type": "BEFORE_EN_Coalition.Label9_48"
               }
             }
           ],
@@ -9518,6 +9488,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BEFORE_EN_Coalition.Label9_48.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BEFORE_EN_Coalition.Label9_48.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "BEFORE_EN_Coalition",
+                "type": "BEFORE_EN_Coalition.Label9_48"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -9974,49 +9974,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AFTER_EN_Coordination.Label9_23.FocusedBorderThickness"
+                  "fullyQualifiedName": "BEFORE_EN_Collaboration.Label9_47.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AFTER_EN_Coordination.Label9_23.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "AFTER_EN_Coordination",
-                "type": "AFTER_EN_Coordination.Label9_23"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AFTER_EN_Coordination.Label9_23.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AFTER_EN_Coordination.Label9_23.TabIndex",
+                  "fullyQualifiedName": "BEFORE_EN_Collaboration.Label9_47.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "AFTER_EN_Coordination",
-                "type": "AFTER_EN_Coordination.Label9_23"
+                "module": "BEFORE_EN_Collaboration",
+                "type": "BEFORE_EN_Collaboration.Label9_47"
               }
             }
           ],
@@ -10028,6 +9998,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BEFORE_EN_Collaboration.Label9_47.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BEFORE_EN_Collaboration.Label9_47.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "BEFORE_EN_Collaboration",
+                "type": "BEFORE_EN_Collaboration.Label9_47"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -10424,49 +10424,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BEFORE_EN_Cooperation.Label9_18.FocusedBorderThickness"
+                  "fullyQualifiedName": "AFTER_EN_Collaboration.Label9_53.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Cooperation.Label9_18.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "BEFORE_EN_Cooperation",
-                "type": "BEFORE_EN_Cooperation.Label9_18"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BEFORE_EN_Cooperation.Label9_18.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Cooperation.Label9_18.TabIndex",
+                  "fullyQualifiedName": "AFTER_EN_Collaboration.Label9_53.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "BEFORE_EN_Cooperation",
-                "type": "BEFORE_EN_Cooperation.Label9_18"
+                "module": "AFTER_EN_Collaboration",
+                "type": "AFTER_EN_Collaboration.Label9_53"
               }
             }
           ],
@@ -10478,6 +10448,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AFTER_EN_Collaboration.Label9_53.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AFTER_EN_Collaboration.Label9_53.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "AFTER_EN_Collaboration",
+                "type": "AFTER_EN_Collaboration.Label9_53"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -10994,49 +10994,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AFTER_EN_Networking.Label9_25.FocusedBorderThickness"
+                  "fullyQualifiedName": "AFTER_EN_Networking.Label9_57.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AFTER_EN_Networking.Label9_25.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "AFTER_EN_Networking",
-                "type": "AFTER_EN_Networking.Label9_25"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AFTER_EN_Networking.Label9_25.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AFTER_EN_Networking.Label9_25.TabIndex",
+                  "fullyQualifiedName": "AFTER_EN_Networking.Label9_57.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "AFTER_EN_Networking",
-                "type": "AFTER_EN_Networking.Label9_25"
+                "type": "AFTER_EN_Networking.Label9_57"
               }
             }
           ],
@@ -11048,6 +11018,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "AFTER_EN_Networking.Label9_57.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "AFTER_EN_Networking.Label9_57.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "AFTER_EN_Networking",
+                "type": "AFTER_EN_Networking.Label9_57"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -11444,49 +11444,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AFTER_EN_No_Interaction.Label9_20.FocusedBorderThickness"
+                  "fullyQualifiedName": "BEFORE_EN_Networking.Label9_51.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AFTER_EN_No_Interaction.Label9_20.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "AFTER_EN_No_Interaction",
-                "type": "AFTER_EN_No_Interaction.Label9_20"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AFTER_EN_No_Interaction.Label9_20.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AFTER_EN_No_Interaction.Label9_20.TabIndex",
+                  "fullyQualifiedName": "BEFORE_EN_Networking.Label9_51.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "AFTER_EN_No_Interaction",
-                "type": "AFTER_EN_No_Interaction.Label9_20"
+                "module": "BEFORE_EN_Networking",
+                "type": "BEFORE_EN_Networking.Label9_51"
               }
             }
           ],
@@ -11498,6 +11468,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BEFORE_EN_Networking.Label9_51.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BEFORE_EN_Networking.Label9_51.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "BEFORE_EN_Networking",
+                "type": "BEFORE_EN_Networking.Label9_51"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -11624,19 +11624,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.Image4_19.AccessibleLabel"
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.Image4_19.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.Image4_19.AccessibleLabel",
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.Image4_19.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BEFORE_EN_Archive",
-                "type": "BEFORE_EN_Archive.Image4_19"
+                "module": "BEFORE_EN_Archive_Not Needed",
+                "type": "'BEFORE_EN_Archive_Not Needed'.Image4_19"
               }
             }
           ],
@@ -11654,19 +11654,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.Image4_19.TabIndex"
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.Image4_19.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.Image4_19.TabIndex",
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.Image4_19.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "BEFORE_EN_Archive",
-                "type": "BEFORE_EN_Archive.Image4_19"
+                "module": "BEFORE_EN_Archive_Not Needed",
+                "type": "'BEFORE_EN_Archive_Not Needed'.Image4_19"
               }
             }
           ],
@@ -11684,19 +11684,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.drpPhase_8.AccessibleLabel"
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.drpPhase_8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.drpPhase_8.AccessibleLabel",
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.drpPhase_8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BEFORE_EN_Archive",
-                "type": "BEFORE_EN_Archive.drpPhase_8"
+                "module": "BEFORE_EN_Archive_Not Needed",
+                "type": "'BEFORE_EN_Archive_Not Needed'.drpPhase_8"
               }
             }
           ],
@@ -11714,19 +11714,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.tabLevels_2.AccessibleLabel"
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.tabLevels_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.tabLevels_2.AccessibleLabel",
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.tabLevels_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BEFORE_EN_Archive",
-                "type": "BEFORE_EN_Archive.tabLevels_2"
+                "module": "BEFORE_EN_Archive_Not Needed",
+                "type": "'BEFORE_EN_Archive_Not Needed'.tabLevels_2"
               }
             }
           ],
@@ -11744,19 +11744,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.Networking_6.AccessibleLabel"
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.Networking_6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.Networking_6.AccessibleLabel",
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.Networking_6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BEFORE_EN_Archive",
-                "type": "BEFORE_EN_Archive.Networking_6"
+                "module": "BEFORE_EN_Archive_Not Needed",
+                "type": "'BEFORE_EN_Archive_Not Needed'.Networking_6"
               }
             }
           ],
@@ -11774,19 +11774,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.Networking_6.TabIndex"
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.Networking_6.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.Networking_6.TabIndex",
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.Networking_6.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "BEFORE_EN_Archive",
-                "type": "BEFORE_EN_Archive.Networking_6"
+                "module": "BEFORE_EN_Archive_Not Needed",
+                "type": "'BEFORE_EN_Archive_Not Needed'.Networking_6"
               }
             }
           ],
@@ -11804,19 +11804,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.Networking_6.CheckboxCanvas2_45.AccessibleLabel"
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.Networking_6.CheckboxCanvas2_45.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.Networking_6.CheckboxCanvas2_45.AccessibleLabel",
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.Networking_6.CheckboxCanvas2_45.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BEFORE_EN_Archive",
-                "type": "BEFORE_EN_Archive.Networking_6.CheckboxCanvas2_45"
+                "module": "BEFORE_EN_Archive_Not Needed",
+                "type": "'BEFORE_EN_Archive_Not Needed'.Networking_6.CheckboxCanvas2_45"
               }
             }
           ],
@@ -11834,19 +11834,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.Networking_6.Icon1_72.AccessibleLabel"
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.Networking_6.Icon1_72.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.Networking_6.Icon1_72.AccessibleLabel",
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.Networking_6.Icon1_72.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BEFORE_EN_Archive",
-                "type": "BEFORE_EN_Archive.Networking_6.Icon1_72"
+                "module": "BEFORE_EN_Archive_Not Needed",
+                "type": "'BEFORE_EN_Archive_Not Needed'.Networking_6.Icon1_72"
               }
             }
           ],
@@ -11864,19 +11864,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.Networking_6.Icon1_72.TabIndex"
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.Networking_6.Icon1_72.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.Networking_6.Icon1_72.TabIndex",
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.Networking_6.Icon1_72.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "BEFORE_EN_Archive",
-                "type": "BEFORE_EN_Archive.Networking_6.Icon1_72"
+                "module": "BEFORE_EN_Archive_Not Needed",
+                "type": "'BEFORE_EN_Archive_Not Needed'.Networking_6.Icon1_72"
               }
             }
           ],
@@ -11894,19 +11894,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.ColumnChart1_2.AccessibleLabel"
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.ColumnChart1_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.ColumnChart1_2.AccessibleLabel",
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.ColumnChart1_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BEFORE_EN_Archive",
-                "type": "BEFORE_EN_Archive.ColumnChart1_2"
+                "module": "BEFORE_EN_Archive_Not Needed",
+                "type": "'BEFORE_EN_Archive_Not Needed'.ColumnChart1_2"
               }
             }
           ],
@@ -11924,19 +11924,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.Icon1_73.AccessibleLabel"
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.Icon1_73.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.Icon1_73.AccessibleLabel",
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.Icon1_73.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BEFORE_EN_Archive",
-                "type": "BEFORE_EN_Archive.Icon1_73"
+                "module": "BEFORE_EN_Archive_Not Needed",
+                "type": "'BEFORE_EN_Archive_Not Needed'.Icon1_73"
               }
             }
           ],
@@ -11954,19 +11954,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.Icon1_73.TabIndex"
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.Icon1_73.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.Icon1_73.TabIndex",
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.Icon1_73.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "BEFORE_EN_Archive",
-                "type": "BEFORE_EN_Archive.Icon1_73"
+                "module": "BEFORE_EN_Archive_Not Needed",
+                "type": "'BEFORE_EN_Archive_Not Needed'.Icon1_73"
               }
             }
           ],
@@ -11984,19 +11984,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.ButtonCanvasprev_2.AccessibleLabel"
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.ButtonCanvasprev_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.ButtonCanvasprev_2.AccessibleLabel",
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.ButtonCanvasprev_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BEFORE_EN_Archive",
-                "type": "BEFORE_EN_Archive.ButtonCanvasprev_2"
+                "module": "BEFORE_EN_Archive_Not Needed",
+                "type": "'BEFORE_EN_Archive_Not Needed'.ButtonCanvasprev_2"
               }
             }
           ],
@@ -12014,19 +12014,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.ButtonCanvas1_20.AccessibleLabel"
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.ButtonCanvas1_20.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.ButtonCanvas1_20.AccessibleLabel",
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.ButtonCanvas1_20.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BEFORE_EN_Archive",
-                "type": "BEFORE_EN_Archive.ButtonCanvas1_20"
+                "module": "BEFORE_EN_Archive_Not Needed",
+                "type": "'BEFORE_EN_Archive_Not Needed'.ButtonCanvas1_20"
               }
             }
           ],
@@ -12044,19 +12044,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.ButtonCanvas1_21.AccessibleLabel"
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.ButtonCanvas1_21.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BEFORE_EN_Archive.ButtonCanvas1_21.AccessibleLabel",
+                  "fullyQualifiedName": "'BEFORE_EN_Archive_Not Needed'.ButtonCanvas1_21.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "BEFORE_EN_Archive",
-                "type": "BEFORE_EN_Archive.ButtonCanvas1_21"
+                "module": "BEFORE_EN_Archive_Not Needed",
+                "type": "'BEFORE_EN_Archive_Not Needed'.ButtonCanvas1_21"
               }
             }
           ],

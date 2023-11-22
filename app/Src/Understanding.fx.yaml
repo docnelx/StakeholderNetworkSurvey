@@ -91,7 +91,7 @@ Understanding As screen:
     Label1 As label:
         FontWeight: =FontWeight.Semibold
         Height: =161
-        Size: =20
+        Size: =18
         Text: |-
             =If(lang="En","Section One.
             Over the next few pages, we will ask you to classify stakeholder organizations from the list into the following categories based on your level of interaction, as explained below. Each organization from the list must be put into a category.","Section 1
