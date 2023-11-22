@@ -57,7 +57,7 @@ Headsups_BEFORE As screen:
     Label1_2 As label:
         FontWeight: =FontWeight.Semibold
         Height: =82
-        Text: ="Carefully completing this will reduce the list of 45 organizations you will have to further classify in 5 groups. Later we will ask you to do this one more time in order to evaluate your current interaction with these organizations.”"
+        Text: =If(lang="En","Carefully completing this will reduce the list of 45 organizations you will have to further classify in 5 groups. Later we will ask you to do this one more time in order to evaluate your current interaction with these organizations.","En remplissant cette section avec soin, vous réduirez la liste des 45 organismes que vous devrez encore classer en cinq groupes. Plus tard, nous vous demanderons de le faire une fois de plus afin d’évaluer votre interaction actuelle avec ces organismes.")
         Width: =1150
         X: =27
         Y: =349
@@ -66,7 +66,7 @@ Headsups_BEFORE As screen:
     HtmlText3 As htmlViewer:
         Height: =117
         HtmlText: |-
-            ="First, please select the list of organizations you believe " &myOrganization& " had no interactions with  <b><font color=#b80000><u>prior to MAMP</u></font></b>."
+            =If(lang="En","First, please select the list of organizations you believe " &myOrganization& " had no interactions with  <b><font color=#b80000><u>prior to MAMP</u></font></b>.", "Tout d’abord, veuillez sélectionner la liste des organismes avec lesquels, selon vous, " &myOrganization& ", n’a eu aucune interaction <b><font color=#b80000><u>avant le PGAM</u></font></b>.")
         Size: =20
         Width: =1204
         X: =27

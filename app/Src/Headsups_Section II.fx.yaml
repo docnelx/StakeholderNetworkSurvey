@@ -58,7 +58,7 @@
         FontWeight: =FontWeight.Semibold
         Height: =185
         Size: =20
-        Text: ="Section Two"
+        Text: =If(lang="En","Section Two","Section 2")
         Width: =978
         X: =27
         Y: =238
@@ -67,7 +67,7 @@
     Label1_8 As label:
         FontWeight: =FontWeight.Semibold
         Height: =61
-        Text: ="Please note that your responses in this section should reflect your personal experiences to the best of your knowledge. The responses are treated completely anonymously and will be reported back in the aggregate."
+        Text: =If(lang="En","Please note that your responses in this section should reflect your personal experiences to the best of your knowledge. The responses are treated completely anonymously and will be reported back in the aggregate.","Veuillez noter que vos réponses dans cette section doivent refléter au mieux votre expérience personnelle. Les réponses sont traitées de façon complètement anonyme et seront rapportées dans l’ensemble.")
         Width: =1046
         X: =27
         Y: =376

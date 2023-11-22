@@ -100,7 +100,7 @@ Headsups_AFTER As screen:
     Label1_3 As label:
         FontWeight: =FontWeight.Semibold
         Height: =82
-        Text: ="Carefully completing this part will reduce the list of 45 organizations you will have to further classify in the next 5 groups."
+        Text: =If(lang="En","Carefully completing this part will reduce the list of 45 organizations you will have to further classify in the next 5 groups.","En remplissant cette section avec soin, vous réduirez la liste des 45 organismes que vous devrez encore classer en cinq groupes.")
         Width: =1150
         X: =47
         Y: =369
@@ -109,8 +109,8 @@ Headsups_AFTER As screen:
     HtmlText3_1 As htmlViewer:
         Height: =117
         HtmlText: |-
-            ="Next, please complete your   <b><font color=#b80000><u>CURRENT</u></font></b>
-            level of interaction with the organizations, starting with the ones you currently have no interaction with."
+            =If(lang="En","Next, please complete your   <b><font color=#b80000><u>CURRENT</u></font></b>
+            level of interaction with the organizations, starting with the ones you currently have no interaction with.","Ensuite, veuillez indiquer votre niveau <b><font color=#b80000><u>ACTUEL</u></font></b> d’interaction avec les organismes, en commençant par ceux avec lesquels vous n’avez actuellement aucune interaction.")
         Size: =20
         Width: =1204
         X: =47

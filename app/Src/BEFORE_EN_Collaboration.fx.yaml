@@ -207,11 +207,16 @@ BEFORE_EN_Collaboration As screen:
             Color: =RGBA(255, 255, 255, 1)
             Height: =298
             Text: |-
-                ="COLLABORATION:
+                =If(lang="En","COLLABORATION:
                  
-                Stakeholders who collaborate with each other are usually members of one system. Their frequent communication is characterized by mutual trust. They reach consensus on all decisions.
+                Stakeholders who collaborate with each other are usually the members of one system. Their frequent communication is characterized by mutual trust. They reach consensus on all decisions.
                 
-                Please select the organizations you collaborate with from the list and click the Next button. "
+                Please, select the organizations you collaborate with from the list and click Next button.","Collaboration:
+                
+                Les intervenants qui collaborent entre eux sont habituellement membres d’un même réseau. 
+                Leurs communications fréquentes sont caractérisées par la confiance mutuelle. Ils arrivent à un consensus sur toutes les décisions.
+                
+                Veuillez sélectionner les organismes de la liste avec lesquels vous collaborez et cliquer sur le bouton Suivant.")
             Width: =313
             X: =20
             Y: =157
@@ -222,7 +227,7 @@ BEFORE_EN_Collaboration As screen:
             Image: =ideas
             Width: =67
             X: =13
-            Y: =119
+            Y: =102
             ZIndex: =12
 
     Image5 As image:
@@ -238,9 +243,11 @@ BEFORE_EN_Collaboration As screen:
         Align: =Align.Center
         Height: =150
         Text: |-
-            ="You have no stakeholder organizations available for selection. 
+            =If(lang="En","You have no stakeholder organizations available for selection. 
             
-            If you believe some stakeholders fall more under this interaction category, kindly deselect from your earlier selections"
+            If you believe some stakeholders fall more under this interaction category, kindly deselect from your earlier selections","Vous n’avez aucun organisme d’intervenants disponible parmi les choix. 
+            
+            Si vous estimez que certains intervenants relèvent davantage de cette catégorie d’interaction, veuillez les désélectionner de vos choix précédents.")
         Visible: =If(Networking_11.AllItemsCount=0,true,false)
         Width: =1015
         X: =351
@@ -390,7 +397,8 @@ BEFORE_EN_Collaboration As screen:
 
     HtmlText1_1 As htmlViewer:
         Height: =50
-        HtmlText: ="Level of Interaction  <b><font color=wine>before MAMP</font></b> for " & myOrganizationLong 
+        HtmlText: |-
+            =If(lang="En","Level of Interaction  <b><font color=#6a0027>before MAMP</font></b> for ","Niveau d’interaction <b><font color=#6a0027>avant le PGAM</font></b> pour") & myOrganizationLong 
         Size: =14
         Width: =1061
         X: =13
