@@ -192,7 +192,7 @@
         Color: =RGBA(184, 0, 0, 1)
         Height: =71
         Size: =10
-        Text: ="**unable to proceed. Please, provide answers to all the questions."
+        Text: =If(lang="En","*unable to proceed. Please, provide answers to all the questions.","*Impossible de continuer. Veuillez répondre à toutes les questions.")
         Visible: =If(Arrow2_4.DisplayMode = DisplayMode.Disabled,true,false)
         Width: =328
         X: =963
