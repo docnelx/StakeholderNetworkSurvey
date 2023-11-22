@@ -340,7 +340,7 @@ BEFORE_EN_Coordination As screen:
             RadiusTopLeft: =0
             RadiusTopRight: =0
             Size: =10
-            Text: ="Yes, Save & Exit"
+            Text: =yesText
             Visible: =_popup
             X: =514
             Y: =378
@@ -354,7 +354,7 @@ BEFORE_EN_Coordination As screen:
             RadiusTopLeft: =0
             RadiusTopRight: =0
             Size: =10
-            Text: ="Cancel"
+            Text: =cancelText
             Visible: =_popup
             X: =705
             Y: =378
@@ -364,7 +364,7 @@ BEFORE_EN_Coordination As screen:
             Align: =Align.Center
             Height: =109
             Size: =12
-            Text: =If(lang="En","Are you sure you want to save your current status and exit from this survey? ","Êtes-vous sûr de vouloir sauvegarder votre statut actuel et quitter le présent sondage? ")
+            Text: =confirmationmsg
             Visible: =_popup
             Width: =525
             X: =420
@@ -387,9 +387,9 @@ BEFORE_EN_Coordination As screen:
             Color: =RGBA(184, 0, 0, 1)
             Height: =57
             Size: =8
-            Text: =If(lang="En","* Do not worry, the survey would save your progress and restart from this page upon resumption","* Ne vous inquiétez pas, le sondage vous permettra de sauvegarder vos progrès et de recommencer à partir de cette page à la reprise.")
+            Text: =worryText
             Visible: =_popup
-            Width: =594
+            Width: =517
             X: =428
             Y: =427
             ZIndex: =35

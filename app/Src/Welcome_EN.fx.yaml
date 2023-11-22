@@ -337,7 +337,7 @@ Welcome_EN As screen:
             RadiusTopLeft: =0
             RadiusTopRight: =0
             Size: =10
-            Text: ="Resume Session"
+            Text: =If(lang="En","Resume Session","Reprendre la séance")
             Visible: =_popup
             X: =514
             Y: =378
@@ -354,7 +354,7 @@ Welcome_EN As screen:
             RadiusTopLeft: =0
             RadiusTopRight: =0
             Size: =10
-            Text: ="Start Over"
+            Text: =If(lang="En","Start Over","Recommencer du début")
             Visible: =_popup
             X: =705
             Y: =378
