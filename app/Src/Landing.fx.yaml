@@ -79,11 +79,12 @@ Landing As screen:
         ZIndex: =8
 
     Label2_70 As label:
-        Align: =Align.Center
         FontWeight: =FontWeight.Semibold
         Height: =41
         Size: =9
-        Text: ="Exit Survey/ Quitter le sondage "
+        Text: |-
+            ="Exit Survey
+            Quitter le sondage "
         Width: =204
         X: =88
         Y: =688
