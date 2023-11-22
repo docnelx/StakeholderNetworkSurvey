@@ -405,7 +405,7 @@ BEFORE_EN_Cooperation As screen:
     HtmlText1_4 As htmlViewer:
         Height: =50
         HtmlText: |-
-            =If(lang="En","Level of Interaction  <b><font color=#6a0027>before MAMP</font></b> for ","Niveau d’interaction <b><font color=#6a0027>avant le PGAM</font></b> pour") & myOrganizationLong 
+            =If(lang="En","Level of Interaction  <b><font color=#6a0027>before MAMP</font></b> for ","Niveau d’interaction <b><font color=#6a0027>avant le PGAM</font></b> pour ") & myOrganizationLong 
         Size: =14
         Width: =1061
         X: =13
