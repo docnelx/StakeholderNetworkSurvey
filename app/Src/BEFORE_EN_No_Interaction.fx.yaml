@@ -249,7 +249,7 @@ BEFORE_EN_No_Interaction As screen:
                 
                 Please, first select organisations with whom you do not have any interaction at all, including no formal communication, no providing of information, etc. ","Aucune interaction:
                 
-                Veuillez d’abord sélectionner les organismes avec lesquels vous n’avez aucune interaction, y compris aucune communication officielle, aucun échange d’information, et ainsi de suite. "),
+                Veuillez d’abord sélectionner les organismes avec lesquels vous n’avez aucune interaction, y compris aucune communication officielle, aucun échange de renseignements, et ainsi de suite."),
                 "Networking",If(lang="En","NETWORKING:
                 
                 Stakeholders who are networking are aware of each other, loosely defined roles or relationship. Have little communication and no shared decision-making.

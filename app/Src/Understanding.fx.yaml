@@ -304,9 +304,9 @@ Understanding As screen:
         Text: |
             =If(lang="En","Stakeholders who coordinate with each other also share information and resources. 
             
-            They have defined roles or relationship, frequently communicate and have some shared decision-making.","Les intervenants qui se coordonnent entre eux échangent également de l’information et des ressources. 
+            They have defined roles or relationship, frequently communicate and have some shared decision-making.","Les intervenants qui se coordonnent entre eux échangent également des renseignements et des ressources. 
             
-            Ils ont des rôles ou des relations définis, communiquent fréquemment et prennent des décisions en commun.")
+            Ils ont des relations ou des rôles définis, communiquent fréquemment et prennent certaines décisions collectives.")
         VerticalAlign: =VerticalAlign.Top
         Width: =215
         X: =698
@@ -321,9 +321,10 @@ Understanding As screen:
             
             "Stakeholders who cooperate with each other provide information but do not share resources, somewhat define roles or relationship. 
             
-            They have formal communication and no shared decision-making","Les intervenants qui collaborent les uns avec les autres s’échangent de l’information, mais ne partagent pas les ressources, et définissent en gros les rôles ou les relations. 
+            They have formal communication and no shared decision-making","Les intervenants qui coopèrent les uns avec les autres s’échangent des renseignements, mais ne partagent pas les ressources, et définissent sommairement les rôles ou les relations. 
             
-            Ils communiquent officiellement et ne prennent pas de décisions en commun.")
+            Ils communiquent officiellement et ne prennent pas de décisions collectives.
+            ")
         VerticalAlign: =VerticalAlign.Top
         Width: =215
         X: =916
@@ -339,7 +340,8 @@ Understanding As screen:
             Have little communication and no shared decision-making.
             ","Les intervenants qui sont en réseau se connaissent, et ils définissent vaguement leurs rôles ou leurs relations. 
             
-            Ils communiquent peu et ne prennent pas de décisions en commun.")
+            Ils communiquent peu et ne prennent pas de décisions collectives.
+            ")
         VerticalAlign: =VerticalAlign.Top
         Width: =215
         X: =1137
