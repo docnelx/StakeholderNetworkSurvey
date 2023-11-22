@@ -62,11 +62,13 @@ Landing As screen:
         Height: =289
         Size: =35
         Text: |-
-            ="Stakeholder Network Survey/ 
-            Sondage auprès du réseau des intervenants - 2023"
-        Width: =692
+            ="Stakeholder Network Survey
+            / 
+            Sondage auprès du réseau des intervenants
+            2023"
+        Width: =901
         X: =26
-        Y: =215
+        Y: =235
         ZIndex: =7
 
     Arrow1_6 As arrow.backArrow:
@@ -193,8 +195,8 @@ Landing As screen:
         RadiusTopRight: =0
         Text: ="English"
         Width: =408
-        X: =757
-        Y: =274
+        X: =927
+        Y: =262
         ZIndex: =11
 
     Button2_1 As button:
@@ -291,8 +293,8 @@ Landing As screen:
         RadiusTopRight: =0
         Text: ="Francais"
         Width: =408
-        X: =757
-        Y: =390
+        X: =927
+        Y: =368
         ZIndex: =12
 
     Label2_5 As label:
@@ -301,7 +303,7 @@ Landing As screen:
         Size: =12
         Text: ="Select / Sélectionnez"
         Width: =434
-        X: =757
+        X: =918
         Y: =228
         ZIndex: =13
 
