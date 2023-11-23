@@ -229,10 +229,10 @@ AFTER_EN_Cooperation As screen:
                 
                 Please select the organizations you cooperate with from the list and click Next button.","Coopération:
                 
-                Les intervenants qui collaborent les uns avec les autres s’échangent de l’information, mais ne partagent pas les ressources, et définissent en gros les rôles ou les relations. 
-                Ils communiquent officiellement et ne prennent pas de décisions en commun.
+                Les intervenants qui coopèrent les uns avec les autres s’échangent des renseignements, mais ne partagent pas les ressources, et définissent sommairement les rôles ou les relations. 
+                Ils communiquent officiellement et ne prennent pas de décisions collectives.
                 
-                Veuillez sélectionner les organismes de la liste avec lesquels vous collaborez et cliquer sur le bouton Suivant.")
+                Veuillez sélectionner les organismes de la liste avec lesquels vous coopérez et cliquer sur le bouton  Suivant.")
             Width: =313
             X: =20
             Y: =157
@@ -381,7 +381,7 @@ AFTER_EN_Cooperation As screen:
             Align: =Align.Center
             Height: =109
             Size: =12
-            Text: =If(lang="En","Are you sure you want to save your current status and exit from this survey? ","Êtes-vous sûr de vouloir sauvegarder votre statut actuel et quitter le présent sondage? ")
+            Text: =confirmationmsg
             Visible: =_popup
             Width: =525
             X: =420
@@ -404,7 +404,7 @@ AFTER_EN_Cooperation As screen:
             Color: =RGBA(184, 0, 0, 1)
             Height: =46
             Size: =8
-            Text: =If(lang="En","* Do not worry, the survey would save your progress and restart from this page upon resumption","* Ne vous inquiétez pas, le sondage vous permettra de sauvegarder vos progrès et de recommencer à partir de cette page à la reprise.")
+            Text: =worryText
             Visible: =_popup
             Width: =494
             X: =428
@@ -423,7 +423,7 @@ AFTER_EN_Cooperation As screen:
     HtmlText1_10 As htmlViewer:
         Height: =50
         HtmlText: |-
-            =If(lang="En","Level of interaction  <b><font color=#6a0027>currently</font></b> for ","Niveau d’interaction <b><font color=#6a0027>actuel</font></b> pour") & myOrganizationLong 
+            =If(lang="En","Level of interaction  <b><font color=#6a0027>currently</font></b> for ","Niveau d’interaction <b><font color=#6a0027>actuel</font></b> pour ") & myOrganizationLong 
         Size: =14
         Width: =1061
         X: =12

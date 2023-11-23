@@ -255,7 +255,7 @@ Welcome_EN As screen:
         Size: =10
         Text: |-
             =If(TabList1_1.Selected.Value="","",If(lang="En","You have indicated that you would be filling and responding to this survey on behalf of " & myOrganizationLong &". 
-            Click on the forward arrow to proceed.","Vous avez indiqué que vous répondriez à ce sondage au nom de " & myOrganizationLong &". Cliquez sur la flèche vers l’avant pour continuer."))
+            Click on the forward arrow to proceed.","Vous avez précisé que vous répondriez à ce sondage au nom de  " & myOrganizationLong &". Cliquez sur la flèche vers la droite pour continuer."))
         Visible: |-
             =If(myOrganization<>"",true)
             
@@ -397,8 +397,8 @@ Welcome_EN As screen:
             Size: =9
             Text: |-
                 =If(lang="En","* Starting over will override your existing records. 
-                 Please enter the override token that was provided to you in your enrolment email.","* Le fait de recommencer du début remplacera vos dossiers existants. 
-                 Veuillez entrer votre jeton de remplacement tel qu’il vous est fourni dans la communication relative à l’inscription que vous avez reçue.")
+                 Please enter the override token that was provided to you in your enrolment email.","* Le fait de recommencer du début remplacera vos réponses existantes. 
+                Veuillez saisir votre jeton de remplacement tel qu’il vous est fourni dans la communication relative à l’inscription que vous avez reçue.")
             Visible: =_popup
             Width: =525
             X: =420

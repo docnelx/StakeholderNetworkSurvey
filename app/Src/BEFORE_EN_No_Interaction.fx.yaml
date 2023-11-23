@@ -249,7 +249,7 @@ BEFORE_EN_No_Interaction As screen:
                 
                 Please, first select organisations with whom you do not have any interaction at all, including no formal communication, no providing of information, etc. ","Aucune interaction:
                 
-                Veuillez d’abord sélectionner les organismes avec lesquels vous n’avez aucune interaction, y compris aucune communication officielle, aucun échange d’information, et ainsi de suite. "),
+                Veuillez d’abord sélectionner les organismes avec lesquels vous n’avez aucune interaction, y compris aucune communication officielle, aucun échange de renseignements, et ainsi de suite."),
                 "Networking",If(lang="En","NETWORKING:
                 
                 Stakeholders who are networking are aware of each other, loosely defined roles or relationship. Have little communication and no shared decision-making.
@@ -472,7 +472,7 @@ BEFORE_EN_No_Interaction As screen:
     HtmlText1 As htmlViewer:
         Height: =50
         HtmlText: |-
-            =If(lang="En","Level of Interaction  <b><font color=#6a0027>before MAMP</font></b> for ","Niveau d’interaction <b><font color=#6a0027>avant le PGAM</font></b> pour") & myOrganizationLong 
+            =If(lang="En","Level of Interaction  <b><font color=#6a0027>before MAMP</font></b> for ","Niveau d’interaction <b><font color=#6a0027>avant le PGAM</font></b> pour ") & myOrganizationLong 
         Size: =14
         Width: =1061
         X: =13
