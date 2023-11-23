@@ -324,11 +324,13 @@ BEFORE_EN_Coalition As screen:
                 
                 If(CountRows(MapDB)=0,
                 Patch(S1_SNP,FinalCollection),
+                If(CountRows(Filter(MapDB,GalleryName=SelectedLevel,Phase=SelectedPhase))=0,
+                Patch(S1_SNP,Filter(FinalCollection,GalleryName=SelectedLevel,Phase=SelectedPhase)),
                 ForAll(
                   galfinalMapDB.AllItems,
                   With({_record:LookUp(MapDB, UniqueConcat=lblPhase.Text&lblShortName.Text)},
                     Patch(S1_SNP, _record,{GalleryName:lblInteraction.Text})  )
-                )
+                ))
                 );
                 
                 
