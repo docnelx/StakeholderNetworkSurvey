@@ -159,7 +159,7 @@ BEFORE_EN_Networking As screen:
     proceddarrow As arrow:
         DisplayMode: =If(CountRows(PartnersList)-1 > CountRows(SelectedItems),DisplayMode.Disabled,DisplayMode.Edit)
         Fill: =RGBA(184, 0, 0, 1)
-        OnSelect: |-
+        OnSelect: |
             =
             ClearCollect(QDB,Filter(SNP_QuestionDatabase,Organization=myOrganization));
             
@@ -186,16 +186,20 @@ BEFORE_EN_Networking As screen:
             ClearCollect(MapDB,Filter(S1_SNP,Organization=myOrganization));
             
             //Patch(S1_SNP,ForAll(galfinalMapDB.AllItems,{ID:LookUp(MapDB,UniqueConcat=lblPhase.Text&lblShortName.Text,ID), GalleryName:lblInteraction.Text})));
+            //Patch(S1_SNP,Filter(FinalCollection,GalleryName=SelectedLevel,Phase=SelectedPhase)
             
-            
+            Patch(S1_SNP,FinalCollection);
+            /*
             If(CountRows(MapDB)=0,
+            Patch(S1_SNP,FinalCollection),
+            If(CountRows(Filter(MapDB,GalleryName=SelectedLevel,Phase=SelectedPhase))=0,
             Patch(S1_SNP,FinalCollection),
             ForAll(
               galfinalMapDB.AllItems,
               With({_record:LookUp(MapDB, UniqueConcat=lblPhase.Text&lblShortName.Text)},
                 Patch(S1_SNP, _record,{GalleryName:lblInteraction.Text})  )
-            )
-            );
+            ))
+            );*/
             
             
             //SNP Master Update
@@ -211,8 +215,7 @@ BEFORE_EN_Networking As screen:
             
             ClearCollect(Master,SNP_Master);
             Set(_loader,false);
-            Navigate(Landing,ScreenTransition.Fade);
-            Exit()
+            Navigate(Headsups_AFTER,ScreenTransition.Fade);
         X: =1301
         Y: =703
         ZIndex: =18
