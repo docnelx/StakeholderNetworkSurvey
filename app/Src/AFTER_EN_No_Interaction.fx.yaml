@@ -278,10 +278,6 @@ AFTER_EN_No_Interaction As screen:
             Fill: =RGBA(184, 0, 0, 1)
             OnSelect: |-
                 =
-                Set(_loader,true);
-                
-                //Questionnaire Update
-                
                 ClearCollect(QDB,Filter(SNP_QuestionDatabase,Organization=myOrganization));
                 
                 ClearCollect(db2,ForAll(galsectionII.AllItems,{Organization: myOrganization, Title: _question.Text, AnswerIndex1: drpchanges.Selected.Value, AnswerIndex2: drpcontributions.Selected.Value}));
@@ -292,21 +288,35 @@ AFTER_EN_No_Interaction As screen:
                 ClearCollect(db5,ForAll(galsectionII_1.AllItems,{Organization: myOrganization, Title: _question_1.Text, AnswerIndex1: drpchanges_1.Selected.Value, AnswerIndex2: drpcontributions_1.Selected.Value}));
                 ClearCollect(finaldbs,db2,db3,db4,db5);
                 
+                
                 If(CountRows(QDB)=0,
-                Patch(SNP_QuestionDatabase,finaldbs)
+                Patch(SNP_QuestionDatabase,finaldbs),
                 
-                );
+                ForAll(
+                  galfinaldbs.AllItems,
+                  With({_recordx:LookUp(QDB, Title=lblQuestion.Text)},
+                    Patch(SNP_QuestionDatabase, _recordx,{AnswerIndex1:lblAnswerIndex1.Text,AnswerIndex2:lblAnswerIndex2.Text})  )
+                ));
                 
-                // Mapping DB Update
-                
+                //Update NetworkMap
                 ClearCollect(FinalCollection,SelectedCurrentItems,SelectedItems);
                 ClearCollect(MapDB,Filter(S1_SNP,Organization=myOrganization));
                 
-                If(
-                CountRows(MapDB)=0,
-                Patch(S1_SNP,FinalCollection)
-                );
+                //Patch(S1_SNP,ForAll(galfinalMapDB.AllItems,{ID:LookUp(MapDB,UniqueConcat=lblPhase.Text&lblShortName.Text,ID), GalleryName:lblInteraction.Text})));
+                //Patch(S1_SNP,Filter(FinalCollection,GalleryName=SelectedLevel,Phase=SelectedPhase)
                 
+                Patch(S1_SNP,FinalCollection);
+                /*
+                If(CountRows(MapDB)=0,
+                Patch(S1_SNP,FinalCollection),
+                If(CountRows(Filter(MapDB,GalleryName=SelectedLevel,Phase=SelectedPhase))=0,
+                Patch(S1_SNP,FinalCollection),
+                ForAll(
+                  galfinalMapDB.AllItems,
+                  With({_record:LookUp(MapDB, UniqueConcat=lblPhase.Text&lblShortName.Text)},
+                    Patch(S1_SNP, _record,{GalleryName:lblInteraction.Text})  )
+                ))
+                );*/
                 
                 
                 //SNP Master Update
