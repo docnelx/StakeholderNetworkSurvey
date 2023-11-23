@@ -434,7 +434,7 @@ Welcome_EN As screen:
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Size: =10
-        Text: ="Override"
+        Text: =If(lang="En","Override","Remplacer")
         Visible: =_override
         Width: =110
         X: =755
