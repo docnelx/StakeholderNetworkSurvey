@@ -200,6 +200,7 @@ Landing As screen:
             Set(cancelText,"Cancel");
             Set(worryText,"* Do not worry, the survey would save your progress and restart from this page upon resumption");
             Set(confirmationmsg,"Are you sure you want to save your current status and exit from this survey? ");,
+            
             Set(savephrase,"Sauvegarder et quitter pour continuer plus tard");
             Set(yesText,"Oui, sauvegarder et quitter");
             Set(cancelText,"Annuler");
@@ -316,6 +317,8 @@ Landing As screen:
             Set(cancelText,"Cancel");
             Set(worryText,"* Do not worry, the survey would save your progress and restart from this page upon resumption");
             Set(confirmationmsg,"Are you sure you want to save your current status and exit from this survey? ");,
+            
+            
             Set(savephrase,"Sauvegarder et quitter pour continuer plus tard");
             Set(yesText,"Oui, sauvegarder et quitter");
             Set(cancelText,"Annuler");

@@ -32,9 +32,9 @@
             If(IsBlank(_lookupReecord),
             
             Patch(SNP_Master,Defaults(SNP_Master),
-            {Title:myOrganization,Status:{Value:"Completed"},end:DateTimeValue(_endDate),Last_Page:_currentPage,FinalThoughts:finallthoughtstext.Text}); ,
+            {Title:myOrganization,end:DateTimeValue(_endDate),Last_Page:_currentPage,FinalThoughts:finallthoughtstext.Text}); ,
             
-            Patch(SNP_Master,_lookupReecord,{Status:{Value:"Completed"},enddate:_endDate,Last_Page:_currentPage,FinalThoughts:finallthoughtstext.Text}) );
+            Patch(SNP_Master,_lookupReecord,{enddate:_endDate,Last_Page:_currentPage,FinalThoughts:finallthoughtstext.Text}) );
             
             ClearCollect(FinalDurations,
             AddColumns(

@@ -125,32 +125,6 @@
     "dependents": [],
     "id": "50372c73-b33b-499f-8b0e-4a05f6ff0e1a"
   },
-  "ed570826-fd6e-4638-97e9-0a051aa4a830": {
-    "appActions": [],
-    "connectionRef": {
-      "apiTier": "Standard",
-      "displayName": "Excel Online (Business)",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1658/1.0.1658.3452/excelonlinebusiness/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness",
-      "parameterHints": {},
-      "parameterHintsV2": {}
-    },
-    "datasets": {
-      "groups%252F04cb214f-e377-4343-bf01-4d0a65cd736b,b%2521gnKhgdisoE2ucvpDhNMNkAscrsy_4ntFr0xFH4xjflLeOualgquDSrUEoCLeK3j2,015YV6G7EGKHS2JRHQDJCI6BZCVSBAR5FK": {
-        "dataSources": {
-          "Table8": {
-            "tableName": "{152E7BD9-662E-4749-9FA9-3C8895C51F66}"
-          }
-        }
-      }
-    },
-    "dataSources": [
-      "Table8"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "ed570826-fd6e-4638-97e9-0a051aa4a830"
-  },
   "ef9f28df-370f-4ae2-9112-7b03ba9b1797": {
     "appActions": [
       "providers/PowerPlatform.Governance/Operations/Read"

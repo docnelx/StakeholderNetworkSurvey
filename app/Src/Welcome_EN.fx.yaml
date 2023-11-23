@@ -445,11 +445,11 @@ Welcome_EN As screen:
         BorderColor: =RGBA(202, 202, 202, 1)
         Default: =""
         Height: =38
-        HintText: ="Enter Override Token"
+        HintText: =If(lang="En","Enter Override Token","Entrer votre jeton de remplacement")
         Size: =10
         Visible: =_override
-        Width: =226
-        X: =514
+        Width: =244
+        X: =495
         Y: =502
         ZIndex: =28
 
