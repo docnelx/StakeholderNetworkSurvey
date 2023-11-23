@@ -382,18 +382,20 @@ BEFORE_EN_No_Interaction As screen:
                 ClearCollect(MapDB,Filter(S1_SNP,Organization=myOrganization));
                 
                 //Patch(S1_SNP,ForAll(galfinalMapDB.AllItems,{ID:LookUp(MapDB,UniqueConcat=lblPhase.Text&lblShortName.Text,ID), GalleryName:lblInteraction.Text})));
+                //Patch(S1_SNP,Filter(FinalCollection,GalleryName=SelectedLevel,Phase=SelectedPhase)
                 
-                
+                Patch(S1_SNP,FinalCollection);
+                /*
                 If(CountRows(MapDB)=0,
                 Patch(S1_SNP,FinalCollection),
                 If(CountRows(Filter(MapDB,GalleryName=SelectedLevel,Phase=SelectedPhase))=0,
-                Patch(S1_SNP,Filter(FinalCollection,GalleryName=SelectedLevel,Phase=SelectedPhase)),
+                Patch(S1_SNP,FinalCollection),
                 ForAll(
                   galfinalMapDB.AllItems,
                   With({_record:LookUp(MapDB, UniqueConcat=lblPhase.Text&lblShortName.Text)},
                     Patch(S1_SNP, _record,{GalleryName:lblInteraction.Text})  )
                 ))
-                );
+                );*/
                 
                 
                 //SNP Master Update
