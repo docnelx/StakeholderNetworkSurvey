@@ -93,7 +93,7 @@
         FontWeight: =FontWeight.Semibold
         Height: =18
         Size: =9
-        Text: ="Complete"
+        Text: =If(lang="En","Complete","Complété")
         Width: =78
         X: =1288
         Y: =750
