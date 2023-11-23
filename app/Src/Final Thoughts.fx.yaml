@@ -27,9 +27,6 @@
             =
             
             
-            
-            
-            
             Set(_lookupReecord,LookUp(SNP_Master,Title=myOrganization));
             Set(_endDate,Text( Now(), "[$-en-US]mm/dd/yyyy hh:mm:ss AM/PM" ));
             If(IsBlank(_lookupReecord),

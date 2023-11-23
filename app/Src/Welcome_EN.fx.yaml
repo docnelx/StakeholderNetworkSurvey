@@ -164,7 +164,7 @@ Welcome_EN As screen:
         OnSelect: |
             =
             If(
-            TabList1_1.Selected.Value = If(lang="En","Representative of Stakeholder Organization (including FCM Partners)","Représentant de l’organisme intervenant (y compris les partenaires de la FCM)"),
+            TabList1_1.Selected.Value = "Representative of Stakeholder Organization (including FCM Partners)" || TabList1_1.Selected.Value ="Représentant de l’organisme intervenant (y compris les partenaires de la FCM)",
             Set(myOrganization,galmyOrganization.Selected.ShortName);
             Set(myOrganizationLong,galmyOrganization.Selected.LongName);
             Set(Stakeholderclass,"Partner");,
