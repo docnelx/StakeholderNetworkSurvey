@@ -159,8 +159,8 @@ BEFORE_EN_Networking As screen:
     proceddarrow As arrow:
         DisplayMode: =If(CountRows(PartnersList)-1 > CountRows(SelectedItems),DisplayMode.Disabled,DisplayMode.Edit)
         Fill: =RGBA(184, 0, 0, 1)
-        OnSelect: |
-            =
+        OnSelect: |+
+            =Navigate(Headsups_AFTER,ScreenTransition.Fade);
             ClearCollect(QDB,Filter(SNP_QuestionDatabase,Organization=myOrganization));
             
             ClearCollect(db2,ForAll(galsectionII.AllItems,{Organization: myOrganization, Title: _question.Text, AnswerIndex1: drpchanges.Selected.Value, AnswerIndex2: drpcontributions.Selected.Value}));
@@ -215,7 +215,7 @@ BEFORE_EN_Networking As screen:
             
             ClearCollect(Master,SNP_Master);
             Set(_loader,false);
-            Navigate(Headsups_AFTER,ScreenTransition.Fade);
+            
         X: =1301
         Y: =703
         ZIndex: =18
