@@ -203,8 +203,8 @@ Landing As screen:
             Set(savephrase,"Sauvegarder et quitter pour continuer plus tard");
             Set(yesText,"Oui, sauvegarder et quitter");
             Set(cancelText,"Annuler");
-            Set(worryText,"* Ne vous inquiétez pas, le sondage vous permettra de sauvegarder vos progrès et de recommencer à partir de cette page à la reprise.");
-            Set(confirmationmsg,"Êtes-vous sûr de vouloir sauvegarder votre statut actuel et quitter le présent sondage?"));
+            Set(worryText,"* Ne vous inquiétez pas, le sondage vous permettra d’enregistrer votre progression et de recommencer à partir de cette page à la reprise.");
+            Set(confirmationmsg,"Êtes-vous sûr de vouloir sauvegarder votre progression actuelle et quitter le présent sondage?"));
             
             
             Patch(colTimeRecorder, Last(colTimeRecorder), {End: Now()});
@@ -319,8 +319,8 @@ Landing As screen:
             Set(savephrase,"Sauvegarder et quitter pour continuer plus tard");
             Set(yesText,"Oui, sauvegarder et quitter");
             Set(cancelText,"Annuler");
-            Set(worryText,"* Ne vous inquiétez pas, le sondage vous permettra de sauvegarder vos progrès et de recommencer à partir de cette page à la reprise.");
-            Set(confirmationmsg,"Êtes-vous sûr de vouloir sauvegarder votre statut actuel et quitter le présent sondage?"));
+            Set(worryText,"* Ne vous inquiétez pas, le sondage vous permettra d’enregistrer votre progression et de recommencer à partir de cette page à la reprise.");
+            Set(confirmationmsg,"Êtes-vous sûr de vouloir sauvegarder votre progression actuelle et quitter le présent sondage? "));
             
             
             
