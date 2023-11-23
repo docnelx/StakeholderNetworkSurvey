@@ -130,7 +130,9 @@ BEFORE_EN_No_Interaction As screen:
             OnCheck: |-
                 =
                 Collect(SelectedItems, [{Organization: myOrganization,Phase:SelectedPhase, ShortName:ThisItem.ShortName,GalleryName:SelectedLevel, Concat:SelectedLevel&ThisItem.ShortName}])
-            OnUncheck: =RemoveIf(SelectedItems, ShortName = ThisItem.ShortName)
+            OnUncheck: |-
+                =RemoveIf(SelectedItems, ShortName = ThisItem.ShortName);
+                RemoveIf(S1_SNP,ShortName = ThisItem.ShortName,Phase=SelectedPhase,Organization=myOrganization,GalleryName=SelectedLevel);
             Text: =""
             Visible: |-
                 =true
