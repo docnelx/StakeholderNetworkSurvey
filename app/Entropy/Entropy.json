@@ -856,7 +856,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/23/2023 13:24:17",
+  "HeaderLastSavedDateTimeUTC": "11/23/2023 13:26:15",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "05c3e637-bb2f-4737-aa61-07d5cfcd386c": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/395e393d43a5499896de316a990434db\"",
