@@ -3,7 +3,7 @@ Understanding As screen:
     Fill: =RGBA(237, 237, 237, 1)
     OnHidden: |-
         =Patch(colTimeRecorder, Last(colTimeRecorder), {End: Now()});
-    OnVisible: |-
+    OnVisible: |
         =Collect(colTimeRecorder,{Page: Self.Name,Start:Now(),End: ""});
 
     Rectangle5_2 As rectangle:
