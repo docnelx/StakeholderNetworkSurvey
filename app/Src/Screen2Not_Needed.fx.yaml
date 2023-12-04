@@ -58,6 +58,8 @@ Screen2Not_Needed As screen:
         DisplayMode: =DisplayMode.Edit
         FontSize: =0
         Height: =32
+        OnCheck: =false
+        OnUncheck: =false
         Width: =160
         X: =60
         Y: =60

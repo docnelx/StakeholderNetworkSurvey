@@ -57,6 +57,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -301,6 +302,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button1_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -539,6 +541,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DataTable1_2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -722,6 +725,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "GalleryName_Column1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -815,6 +819,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "GalleryName_Column1_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -908,6 +913,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "GalleryName_Column1_2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1001,6 +1007,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Organization_Column1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1094,6 +1101,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Organization_Column1_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1187,6 +1195,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Organization_Column1_2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1280,6 +1289,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Phase_Column1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1373,6 +1383,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Phase_Column1_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1466,6 +1477,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Phase_Column1_2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1554,6 +1566,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Screen1_Not_Needed",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1652,6 +1665,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "selected items",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1860,6 +1874,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "selectedcurrentitems",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2043,6 +2058,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ShortName_Column1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2137,6 +2153,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ShortName_Column1_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2235,6 +2252,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ShortName_Column1_2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [

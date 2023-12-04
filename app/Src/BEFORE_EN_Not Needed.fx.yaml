@@ -653,6 +653,7 @@
             FontSize: =0
             Height: =lblNetworking_2.Height
             IconSize: ='InfoButtonCanvas.IconSize'.Large
+            OnSelect: =false
             Width: =33
             X: =253
             Y: =165
@@ -687,6 +688,7 @@
             FontSize: =0
             Height: =lblNetworking_2.Height
             IconSize: ='InfoButtonCanvas.IconSize'.Large
+            OnSelect: =false
             Width: =33
             X: =475
             Y: =163
@@ -723,6 +725,7 @@
             FontSize: =0
             Height: =lblNetworking_2.Height
             IconSize: ='InfoButtonCanvas.IconSize'.Large
+            OnSelect: =false
             Width: =33
             X: =698
             Y: =164
@@ -757,6 +760,7 @@
             FontSize: =0
             Height: =lblNetworking_2.Height
             IconSize: ='InfoButtonCanvas.IconSize'.Large
+            OnSelect: =false
             Width: =33
             X: =915
             Y: =165
@@ -789,6 +793,7 @@
             FontSize: =0
             Height: =lblNetworking_2.Height
             IconSize: ='InfoButtonCanvas.IconSize'.Large
+            OnSelect: =false
             Width: =33
             X: =1129
             Y: =163

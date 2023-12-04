@@ -57,6 +57,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button6",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -270,6 +271,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Concat_Column1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -388,6 +390,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DataTable1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -571,6 +574,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "GalleryName_Column2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -664,6 +668,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ID_Column1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -757,6 +762,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Organization_Column2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -850,6 +856,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Phase_Column2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -938,6 +945,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Screen3Not_Needed",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1011,6 +1019,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ShortName_Column2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1104,6 +1113,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Status_Column1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
