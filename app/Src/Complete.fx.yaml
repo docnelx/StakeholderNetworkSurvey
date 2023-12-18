@@ -61,9 +61,16 @@ Complete As screen:
         ZIndex: =8
 
     "EmailText As 'Text input'":
+        Align: ="Start"
         BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
         FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
         Height: =48
         Width: =501
         X: =233

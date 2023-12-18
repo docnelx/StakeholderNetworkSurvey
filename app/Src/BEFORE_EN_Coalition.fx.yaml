@@ -91,7 +91,13 @@ BEFORE_EN_Coalition As screen:
         CheckboxCanvas2_52 As Checkbox:
             BasePaletteColor: =
             DisplayMode: =DisplayMode.Edit
+            Font: =""
+            FontColor: =
+            FontItalic: =false
             FontSize: =0
+            FontStrikethrough: =false
+            FontUnderline: =false
+            FontWeight: =""
             Height: =52
             Label: =" "
             OnCheck: |-

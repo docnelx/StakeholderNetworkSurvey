@@ -124,7 +124,13 @@
             CheckboxCanvas2_19 As Checkbox:
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
                 FontSize: =0
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
                 Height: =35
                 Label: =" "
                 OnCheck: |-
@@ -218,7 +224,13 @@
             CheckboxCanvas2_20 As Checkbox:
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
                 FontSize: =0
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
                 Height: =35
                 Label: =" "
                 OnCheck: |-
@@ -294,7 +306,13 @@
             CheckboxCanvas2_21 As Checkbox:
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
                 FontSize: =0
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
                 Height: =35
                 Label: =" "
                 OnCheck: |-
@@ -369,7 +387,13 @@
             CheckboxCanvas2_22 As Checkbox:
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
                 FontSize: =0
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
                 Height: =35
                 Label: =" "
                 OnCheck: |-
@@ -444,7 +468,13 @@
             CheckboxCanvas2_23 As Checkbox:
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
                 FontSize: =0
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
                 Height: =35
                 Label: =" "
                 OnCheck: |-
@@ -519,7 +549,13 @@
             CheckboxCanvas2_24 As Checkbox:
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
                 FontSize: =0
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
                 Height: =35
                 Label: =" "
                 OnCheck: |-
@@ -650,7 +686,13 @@
                 No shared decision-making  
                 "
             DisplayMode: =DisplayMode.Edit
+            Font: =""
+            FontColor: =
+            FontItalic: =false
             FontSize: =0
+            FontStrikethrough: =false
+            FontUnderline: =false
+            FontWeight: =""
             Height: =lblNetworking_2.Height
             IconSize: ='InfoButtonCanvas.IconSize'.Large
             OnSelect: =false
@@ -685,7 +727,13 @@
                 
                 "
             DisplayMode: =DisplayMode.Edit
+            Font: =""
+            FontColor: =
+            FontItalic: =false
             FontSize: =0
+            FontStrikethrough: =false
+            FontUnderline: =false
+            FontWeight: =""
             Height: =lblNetworking_2.Height
             IconSize: ='InfoButtonCanvas.IconSize'.Large
             OnSelect: =false
@@ -722,7 +770,13 @@
                  
                 "
             DisplayMode: =DisplayMode.Edit
+            Font: =""
+            FontColor: =
+            FontItalic: =false
             FontSize: =0
+            FontStrikethrough: =false
+            FontUnderline: =false
+            FontWeight: =""
             Height: =lblNetworking_2.Height
             IconSize: ='InfoButtonCanvas.IconSize'.Large
             OnSelect: =false
@@ -757,7 +811,13 @@
                   
                 "
             DisplayMode: =DisplayMode.Edit
+            Font: =""
+            FontColor: =
+            FontItalic: =false
             FontSize: =0
+            FontStrikethrough: =false
+            FontUnderline: =false
+            FontWeight: =""
             Height: =lblNetworking_2.Height
             IconSize: ='InfoButtonCanvas.IconSize'.Large
             OnSelect: =false
@@ -790,7 +850,13 @@
                  
                 "
             DisplayMode: =DisplayMode.Edit
+            Font: =""
+            FontColor: =
+            FontItalic: =false
             FontSize: =0
+            FontStrikethrough: =false
+            FontUnderline: =false
+            FontWeight: =""
             Height: =lblNetworking_2.Height
             IconSize: ='InfoButtonCanvas.IconSize'.Large
             OnSelect: =false

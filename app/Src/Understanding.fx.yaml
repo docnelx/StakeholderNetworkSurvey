@@ -69,7 +69,12 @@ Understanding As screen:
     "TabList1_2 As 'Tab list'.pcfdataset":
         BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontItalic: =false
         FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
         Height: =55
         Items: =["Understanding Levels of Collaboration"]
         OnSelect: =Set(tablistvalue, TabList1_2.Selected.Value)

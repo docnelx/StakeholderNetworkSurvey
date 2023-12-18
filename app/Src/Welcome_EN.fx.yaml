@@ -212,7 +212,12 @@ Welcome_EN As screen:
         BasePaletteColor: =
         DefaultSelectedItems: =[""]
         DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontItalic: =false
         FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
         Height: =38
         Items: |-
             =If(lang="En",
@@ -490,9 +495,16 @@ Welcome_EN As screen:
             ZIndex: =3
 
         "respondentName As 'Text input'":
+            Align: ="Start"
             BasePaletteColor: =
             DisplayMode: =DisplayMode.Edit
+            Font: =""
+            FontColor: =
+            FontItalic: =false
             FontSize: =0
+            FontStrikethrough: =false
+            FontUnderline: =false
+            FontWeight: =""
             Height: =50
             OnChange: |-
                 =Set(myOrganizationLong,respondentName.Value);

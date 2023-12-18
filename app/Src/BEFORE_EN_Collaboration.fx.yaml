@@ -89,7 +89,13 @@ BEFORE_EN_Collaboration As screen:
         CheckboxCanvas2_50 As Checkbox:
             BasePaletteColor: =
             DisplayMode: =DisplayMode.Edit
+            Font: =""
+            FontColor: =
+            FontItalic: =false
             FontSize: =0
+            FontStrikethrough: =false
+            FontUnderline: =false
+            FontWeight: =""
             Height: =52
             Label: =" "
             OnCheck: |-

@@ -18,7 +18,13 @@
     ButtonCanvas1_20 As Button:
         BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
         FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
         Height: =ButtonCanvasprev_2.Height
         OnSelect: =Clear(SelectedItems)
         Text: ="Reset"
@@ -30,7 +36,13 @@
     ButtonCanvas1_21 As Button:
         BasePaletteColor: =
         DisplayMode: =
+        Font: =""
+        FontColor: =
+        FontItalic: =false
         FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
         Height: =ButtonCanvasprev_2.Height
         OnSelect: =//Navigate(AFTER_EN_New_1,ScreenTransition.Fade)
         Text: ="Proceed"
@@ -42,7 +54,13 @@
     ButtonCanvasprev_2 As Button:
         BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
         FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
         Height: =50
         OnSelect: =Back()
         Text: ="Previous"
@@ -115,7 +133,13 @@
         CheckboxCanvas2_45 As Checkbox:
             BasePaletteColor: =
             DisplayMode: =DisplayMode.Edit
+            Font: =""
+            FontColor: =
+            FontItalic: =false
             FontSize: =0
+            FontStrikethrough: =false
+            FontUnderline: =false
+            FontWeight: =""
             Height: =52
             Label: =" "
             OnCheck: |-
@@ -164,7 +188,12 @@
         Alignment: ='TabList.Alignment'.Horizontal
         BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontItalic: =false
         FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
         Height: =73
         Items: =["No Interaction","Collaboration","Coalition","Coordination","Cooperation","Networking"]
         OnSelect: =Set(tablistvalue, tabLevels_2.Selected.Value)

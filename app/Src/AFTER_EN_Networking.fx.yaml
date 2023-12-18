@@ -93,7 +93,13 @@ AFTER_EN_Networking As screen:
         CheckboxCanvas2_57 As Checkbox:
             BasePaletteColor: =
             DisplayMode: =DisplayMode.Edit
+            Font: =""
+            FontColor: =
+            FontItalic: =false
             FontSize: =0
+            FontStrikethrough: =false
+            FontUnderline: =false
+            FontWeight: =""
             Height: =52
             Label: =" "
             OnCheck: |-

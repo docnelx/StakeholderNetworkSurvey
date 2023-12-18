@@ -56,7 +56,13 @@ Screen2Not_Needed As screen:
     CheckboxCanvas1 As Checkbox:
         BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
         FontSize: =0
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
         Height: =32
         OnCheck: =false
         OnUncheck: =false

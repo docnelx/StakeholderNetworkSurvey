@@ -68,7 +68,7 @@
     "Name": "PowerApps_CoreControls_ButtonCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Button",
-    "Version": "0.0.25"
+    "Version": "0.0.27"
   },
   "checkbox": {
     "CustomGroupControlTemplateName": "",
@@ -97,7 +97,7 @@
     "Name": "PowerApps_CoreControls_CheckboxCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Checkbox",
-    "Version": "0.0.18"
+    "Version": "0.0.20"
   },
   "dataTable": {
     "CustomGroupControlTemplateName": "",
@@ -154,7 +154,7 @@
     "Name": "PowerApps_CoreControls_DropdownCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Dropdown",
-    "Version": "0.0.24"
+    "Version": "0.0.26"
   },
   "gallery": {
     "CustomGroupControlTemplateName": "",
@@ -168,7 +168,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "gallery",
     "OverridableProperties": {},
-    "Version": "2.13.2"
+    "Version": "2.14.0"
   },
   "galleryTemplate": {
     "CustomGroupControlTemplateName": "",
@@ -278,7 +278,7 @@
     "Name": "PowerApps_CoreControls_InfoButtonCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Information button",
-    "Version": "0.0.22"
+    "Version": "0.0.25"
   },
   "label": {
     "CustomGroupControlTemplateName": "",
@@ -321,7 +321,7 @@
     "Name": "PowerApps_CoreControls_LinkCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Link",
-    "Version": "0.0.20"
+    "Version": "0.0.24"
   },
   "radio": {
     "CustomGroupControlTemplateName": "",
@@ -378,7 +378,7 @@
     "Name": "PowerApps_CoreControls_TabList",
     "OverridableProperties": {},
     "TemplateDisplayName": "Tab list",
-    "Version": "2.2.6"
+    "Version": "2.2.10"
   },
   "text": {
     "CustomGroupControlTemplateName": "",
@@ -407,6 +407,6 @@
     "Name": "PowerApps_CoreControls_TextInputCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Text input",
-    "Version": "0.0.21"
+    "Version": "0.0.24"
   }
 }
