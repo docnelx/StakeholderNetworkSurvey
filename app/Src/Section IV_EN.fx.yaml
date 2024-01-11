@@ -36,7 +36,28 @@
             ClearCollect(db5,ForAll(galsectionII_1.AllItems,{Organization: myOrganization, Title: _question_1.Text, AnswerIndex1: drpchanges_1.Selected.Value, AnswerIndex2: drpcontributions_1.Selected.Value}));
             ClearCollect(finaldbs,db2,db3,db4,db5);
             
+            ClearCollect(
+                colGalleryUpdates,
+                ForAll(
+                    galfinaldbs.AllItems,
+                    {
+                        Title:lblQuestion.Text,
+                        ID: Value(ID.Text),
+                        AnswerIndex1:lblAnswerIndex1.Text,
+                        AnswerIndex2:lblAnswerIndex2.Text,
+                        Language: lang
+                    }
+                )
+            );
             
+            // update SharePoint list with gallery values
+            Patch(
+                SNP_QuestionDatabase,
+                colGalleryUpdates.ID,
+                colGalleryUpdates
+            );
+            
+            /*
             If(CountRows(QDB)=0,
             Patch(SNP_QuestionDatabase,finaldbs),
             
@@ -44,7 +65,7 @@
               galfinaldbs.AllItems,
               With({_recordx:LookUp(QDB, Title=lblQuestion.Text)},
                 Patch(SNP_QuestionDatabase, _recordx,{AnswerIndex1:lblAnswerIndex1.Text,AnswerIndex2:lblAnswerIndex2.Text})  )
-            ));
+            )); */
             
             //Update NetworkMap
             ClearCollect(FinalCollection,SelectedCurrentItems,SelectedItems);

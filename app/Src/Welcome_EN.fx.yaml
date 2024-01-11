@@ -188,6 +188,22 @@ Welcome_EN As screen:
             {Title:myOrganization,startdate:_startDate,Status:{Value:"Draft"},Last_Page:_currentPage,StakeholderType:Stakeholderclass}); ,
             
             Patch(SNP_Master,_lookupReecord,{startdate:_startDate}) );
+            
+            
+            
+            ClearCollect(QDB,Filter(SNP_QuestionDatabase,Organization=myOrganization,Language=lang));
+            
+            ClearCollect(db2,ForAll(galsectionII.AllItems,{Organization: myOrganization, Title: _question.Text, AnswerIndex1: drpchanges.Selected.Value, AnswerIndex2: drpcontributions.Selected.Value,Language:lang}));
+            
+            ClearCollect(db3,ForAll(galsectionIII.AllItems,{Organization: myOrganization, Title: quest.Text, AnswerIndex1: radoption.Selected.Response, AnswerIndex2:"",Language:lang}));
+            
+            ClearCollect(db4,ForAll(galsectionIV.AllItems,{Organization: myOrganization, Title: quess.Text, AnswerIndex1: drpKP.Selected.Value, AnswerIndex2: "",Language:lang}));
+            ClearCollect(db5,ForAll(galsectionII_1.AllItems,{Organization: myOrganization, Title: _question_1.Text, AnswerIndex1: drpchanges_1.Selected.Value, AnswerIndex2: drpcontributions_1.Selected.Value,Language:lang}));
+            ClearCollect(finaldbs,db2,db3,db4,db5);
+            
+            
+            If(CountRows(QDB)=0,
+            Patch(SNP_QuestionDatabase,finaldbs));
         X: =1291
         Y: =679
         ZIndex: =10
