@@ -302,14 +302,26 @@ BEFORE_EN_Collaboration As screen:
                 ClearCollect(finaldbs,db2,db3,db4,db5);
                 
                 
-                If(CountRows(QDB)=0,
-                Patch(SNP_QuestionDatabase,finaldbs),
+                ClearCollect(
+                    colGalleryUpdates,
+                    ForAll(
+                        galfinaldbs.AllItems,
+                        {
+                            Title:lblQuestion.Text,
+                            ID: Value(IDtext.Text),
+                            AnswerIndex1:lblAnswerIndex1.Text,
+                            AnswerIndex2:lblAnswerIndex2.Text,
+                            Language: lang
+                        }
+                    )
+                );
                 
-                ForAll(
-                  galfinaldbs.AllItems,
-                  With({_recordx:LookUp(QDB, Title=lblQuestion.Text)},
-                    Patch(SNP_QuestionDatabase, _recordx,{AnswerIndex1:lblAnswerIndex1.Text,AnswerIndex2:lblAnswerIndex2.Text})  )
-                ));
+                // update SharePoint list with gallery values
+                Patch(
+                    SNP_QuestionDatabase,
+                    colGalleryUpdates.ID,
+                    colGalleryUpdates
+                );
                 
                 //Update NetworkMap
                 ClearCollect(FinalCollection,SelectedCurrentItems,SelectedItems);
