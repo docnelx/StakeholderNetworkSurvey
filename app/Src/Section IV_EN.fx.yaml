@@ -42,7 +42,7 @@
                     galfinaldbs.AllItems,
                     {
                         Title:lblQuestion.Text,
-                        ID: Value(ID.Text),
+                        ID: Value(IDtext.Text),
                         AnswerIndex1:lblAnswerIndex1.Text,
                         AnswerIndex2:lblAnswerIndex2.Text,
                         Language: lang
