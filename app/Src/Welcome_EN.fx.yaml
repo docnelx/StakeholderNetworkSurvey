@@ -189,16 +189,17 @@ Welcome_EN As screen:
             
             Patch(SNP_Master,_lookupReecord,{startdate:_startDate}) );
             
+            Concurrent(
             
+            ClearCollect(QDB,Filter(SNP_QuestionDatabase,Organization=myOrganization,Language=lang)),
             
-            ClearCollect(QDB,Filter(SNP_QuestionDatabase,Organization=myOrganization,Language=lang));
+            ClearCollect(db2,ForAll(galsectionII.AllItems,{Organization: myOrganization, Title: _question.Text, AnswerIndex1: "", AnswerIndex2: "",Language:lang})),
             
-            ClearCollect(db2,ForAll(galsectionII.AllItems,{Organization: myOrganization, Title: _question.Text, AnswerIndex1: "", AnswerIndex2: "",Language:lang}));
+            ClearCollect(db3,ForAll(galsectionIII.AllItems,{Organization: myOrganization, Title: quest.Text, AnswerIndex1: "", AnswerIndex2:"",Language:lang})),
             
-            ClearCollect(db3,ForAll(galsectionIII.AllItems,{Organization: myOrganization, Title: quest.Text, AnswerIndex1: "", AnswerIndex2:"",Language:lang}));
+            ClearCollect(db4,ForAll(galsectionIV.AllItems,{Organization: myOrganization, Title: quess.Text, AnswerIndex1: "", AnswerIndex2: "",Language:lang})),
+            ClearCollect(db5,ForAll(galsectionII_1.AllItems,{Organization: myOrganization, Title: _question_1.Text, AnswerIndex1: "", AnswerIndex2: "",Language:lang})));
             
-            ClearCollect(db4,ForAll(galsectionIV.AllItems,{Organization: myOrganization, Title: quess.Text, AnswerIndex1: "", AnswerIndex2: "",Language:lang}));
-            ClearCollect(db5,ForAll(galsectionII_1.AllItems,{Organization: myOrganization, Title: _question_1.Text, AnswerIndex1: "", AnswerIndex2: "",Language:lang}));
             ClearCollect(finaldbs,db2,db3,db4,db5);
             
             
