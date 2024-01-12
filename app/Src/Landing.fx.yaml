@@ -350,10 +350,3 @@ Landing As screen:
         Y: =228
         ZIndex: =13
 
-    Button7 As button:
-        OnSelect: =ClearCollect(QDB,Filter(SNP_QuestionDatabase,Organization=myOrganization,Language=lang));
-        Text: ="Button"
-        X: =40
-        Y: =40
-        ZIndex: =14
-
