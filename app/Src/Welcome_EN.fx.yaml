@@ -161,7 +161,7 @@ Welcome_EN As screen:
     Arrow2 As arrow:
         DisplayMode: =If(IsBlank(myOrganization),DisplayMode.Disabled,DisplayMode.Edit)
         Fill: =RGBA(184, 0, 0, 1)
-        OnSelect: |
+        OnSelect: |+
             =
             If(
             TabList1_1.Selected.Value = "Representative of Stakeholder Organization (including FCM Partners)" || TabList1_1.Selected.Value ="Représentant de l’organisme intervenant (y compris les partenaires de la FCM)",
@@ -174,12 +174,9 @@ Welcome_EN As screen:
             );
             
             
+            
             If(CountRows(Filter(Master,Title=myOrganization))>0,
             Set(_popup,true);,
-            Navigate(Understanding,ScreenTransition.Fade););
-            
-            
-            
             
             
             
@@ -192,6 +189,16 @@ Welcome_EN As screen:
             ClearCollect(db4,ForAll(galsectionIV.AllItems,{Organization: myOrganization, Title: quess.Text, AnswerIndex1: "", AnswerIndex2: "",Language:lang}));
             ClearCollect(db5,ForAll(galsectionII_1.AllItems,{Organization: myOrganization, Title: _question_1.Text, AnswerIndex1: "", AnswerIndex2: "",Language:lang}));
             
+            ClearCollect(finaldbs,db2,db3,db4,db5);
+            
+            If(CountRows(QDB)=0,
+            Patch(SNP_QuestionDatabase,finaldbs));
+            
+            Navigate(Understanding,ScreenTransition.Fade););
+            
+            
+            
+            
             //Text( Now(), "[$-en-US]mm/dd/yyyy hh:mm:ss AM/PM" )
             Set(_startDate,Text( Now(), "[$-en-US]mm/dd/yyyy hh:mm:ss AM/PM"));
             Set(_lookupReecord,LookUp(SNP_Master,Title=myOrganization));
@@ -200,15 +207,10 @@ Welcome_EN As screen:
             Patch(SNP_Master,Defaults(SNP_Master),
             {Title:myOrganization,startdate:_startDate,Status:{Value:"Draft"},Last_Page:_currentPage,StakeholderType:Stakeholderclass}); ,
             
+            
             Patch(SNP_Master,_lookupReecord,{startdate:_startDate}) );
             
             
-            
-            ClearCollect(finaldbs,db2,db3,db4,db5);
-            
-            
-            If(CountRows(QDB)=0,
-            Patch(SNP_QuestionDatabase,finaldbs));
         X: =1291
         Y: =679
         ZIndex: =10
